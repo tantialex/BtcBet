@@ -114,10 +114,17 @@ input
 .code {
 	font-family:courier new;
 }
+/**----------------------------------------------------------*/
 body{
 	background-color:#f2f2f2;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing:1px;
+}
+.xCenter{
+	left:0px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;
 }
 .list_container{
 	width:600px;
@@ -129,12 +136,6 @@ body{
 	height:300px;
 	border: 2px solid black;
 	background-color:#e6eeff;
-}
-.xCenter{
-	left:0px;
-	right:0px;
-	margin-left:auto;
-	margin-right:auto;
 }
 .card_container .card_header{
 	position:relative;
