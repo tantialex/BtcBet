@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>MasterPage</title>
 	<link rel="stylesheet" href="masterpage.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 	<div id="master_page" class="xCenter">
@@ -29,11 +30,6 @@
 									<a href=""><p class="text">Home</p></a>
 								</div>
 							</li
-							><li class="nav_faq list_item">
-								<div>
-									<a href=""><p class="text">FAQ</p></a>
-								</div>
-							</li
 							><li class="nav_explore list_item">
 								<div>
 									<a href=""><p class="text">Explore</p></a>
@@ -49,6 +45,11 @@
 									<a href=""><p class="text">Random Bet</p></a>
 								</div>
 							</li
+							><li class="nav_faq list_item">
+								<div>
+									<a href=""><p class="text">FAQ</p></a>
+								</div>
+							</li
 							><li class="nav_stats list_item">
 								<div>
 									<a href=""><p class="text">Statistics</p></a>
@@ -59,7 +60,17 @@
 				</div>
 			</div>
 		</div>
-		<div id="content_container" style="width:100%; height:700px;">
+		<div id="content_container">
+			<div class="advert_wrapper item" style="float:left;">
+				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Advert</p>
+			</div>
+			<div class="content_wrapper item">
+				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Content Here</p>
+			</div>
+			<div class="advert_wrapper item" style="float:right;">
+				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Advert</p>
+			</div>
+			<br style="clear:both">
 		</div>
 		<div id="footer_container" class="masterpage_container">
 			<div class="top_row row">
@@ -82,13 +93,13 @@
 							<div class="left_panel panel" style="left:0;">
 								<div class="items_wrapper">
 									<div class="item">
-										<p class="text">Total Bets:&#09;<a class="field_totalBets">100</a></p>
+										<p class="text">Total Bets: <a class="field_totalBets">100</a></p>
 									</div>
 									<div class="item">
-										<p class="text">Bets Won Yes:&#09;<a class="field_totalBets_won_yes">62</a></p>
+										<p class="text">Bets Won Yes: <a class="field_totalBets_won_yes">62</a></p>
 									</div>
 									<div class="item">
-										<p class="text">Bets Won No:&#09;<a class="field_totalBets_won_no">38</a></p>
+										<p class="text">Bets Won No: <a class="field_totalBets_won_no">38</a></p>
 									</div>
 								</div>
 							</div>

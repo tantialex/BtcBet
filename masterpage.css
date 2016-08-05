@@ -21,7 +21,7 @@ a{
 	max-width:3000px;
 }
 .xCenter{
-	left:0px;
+	left:0px; 
 	right:0px;
 	margin-left:auto;
 	margin-right:auto;
@@ -184,6 +184,23 @@ a{
 	/**color_textAccent*/
 	color:#ccffff;
 }
+
+#content_container .item{
+	position:relative;	
+	display:inline-block;
+	height:700px;
+	margin-top:30px;
+	margin-bottom:30px;
+	border:2px dashed black;
+}
+#content_container .content_wrapper{
+	width:60%; 
+	margin-left:10%;
+}
+#content_container .advert_wrapper{
+	width:10%; 
+}
+
 #footer_container  a{
 	color:#ccffff;
 	cursor:pointer;
@@ -258,7 +275,8 @@ a{
 }
 #footer_container .top_row .row_wrapper .contact_panel .icon{
 	display:inline-block;
-	height:80%;
+	max-width:10%;
+	max-height:80%;
 }
 #footer_container .top_row .row_wrapper .contact_panel .text{
 	margin: 10px 10px;
