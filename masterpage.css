@@ -12,9 +12,12 @@ body{
 	padding:0px;
 	margin:0px;
 }
+a{
+	text-decoration:none;
+}
 #master_page{
 	width:100%;
-	min-width:1300px;
+	min-width:1500px;
 	max-width:3000px;
 }
 .xCenter{
@@ -181,6 +184,14 @@ body{
 	/**color_textAccent*/
 	color:#ccffff;
 }
+#footer_container  a{
+	color:#ccffff;
+	cursor:pointer;
+	-webkit-transition-duration: 0.4s;
+}
+#footer_container  a:hover{
+	color:#80ddff;
+}
 #footer_container .top_row{
 	height:150px;
 	background-color: #0099cc;
@@ -201,12 +212,12 @@ body{
 #footer_container .top_row .row_wrapper .items_wrapper{
 	width:100%;
 	height:100%;	
-	padding-top:2.5%;
+	padding-top:5%;
 }
 #footer_container .top_row .row_wrapper .item{
 	position:relative;
 	width:70%;
-	height:30%;
+	height:43px;
 	display:block;
 	padding:0px 20px;
 }
@@ -214,12 +225,9 @@ body{
 	font-size:14px;
 	color:#002533;
 	font-weight:bold;
-	margin:10px 10px;
+	margin:0;
 	vertical-align:top;
 	display:inline-block;
-}
-#footer_container .top_row .row_wrapper .text >a{
-	color:#ccffff;
 }
 #footer_container .top_row .row_wrapper .links_panel .items_wrapper{
 	text-align:right;
@@ -227,6 +235,21 @@ body{
 }
 #footer_container .top_row .row_wrapper .links_panel .item{
 	float:right;
+}
+#footer_container .top_row .row_wrapper .statistics_panel .panel{
+	position:absolute;
+	display:inline-block;
+	width:50%;
+}
+#footer_container .top_row .row_wrapper .statistics_panel .items_wrapper{
+	margin-top:10px;
+	margin-left:10%;
+}
+#footer_container .top_row .row_wrapper .statistics_panel .text{
+	font-size:12px;
+}
+#footer_container .top_row .row_wrapper .statistics_panel .left_panel .item{
+	height:43px;
 }
 #footer_container .top_row .row_wrapper .contact_panel .items_wrapper{
 	width:100%;
@@ -236,4 +259,12 @@ body{
 #footer_container .top_row .row_wrapper .contact_panel .icon{
 	display:inline-block;
 	height:80%;
+}
+#footer_container .top_row .row_wrapper .contact_panel .text{
+	margin: 10px 10px;
+}
+#footer_container .bottom_row .row_wrapper .panel{
+	padding-top:9px;
+	font-size:12px;
+	color: #ccffff;
 }
