@@ -3,7 +3,7 @@
 		Primary: #002533; (Dark Blue)
 		Secondary: #0099cc; (Light Blue)
 		Text-Primary: #80ddff; (Dark Blue)
-		Text-Secondary: #ccffff (Light Blue)		
+		Text-Secondary: #ccffff; (Light Blue)		
 */
 body{
 	background-color:#f2f2f2;
@@ -198,23 +198,42 @@ body{
 	border-bottom:3px dotted #002533;
 	vertical-align:top;
 }
-#footer_container .top_row .row_wrapper .contact_panel .item{
-	position:relative;
+#footer_container .top_row .row_wrapper .items_wrapper{
 	width:100%;
+	height:100%;	
+	padding-top:2.5%;
+}
+#footer_container .top_row .row_wrapper .item{
+	position:relative;
+	width:70%;
+	height:30%;
 	display:block;
-	padding:10px 20px;
+	padding:0px 20px;
 }
-#footer_container .top_row .row_wrapper .contact_panel .icon{
-	display:inline-block;
-	width:10%;
-}
-#footer_container .top_row .row_wrapper .contact_panel .text{
+#footer_container .top_row .row_wrapper .text{
 	font-size:14px;
-	color:black;
-	vertical-align:middle;
+	color:#002533;
+	font-weight:bold;
+	margin:10px 10px;
 	vertical-align:top;
 	display:inline-block;
 }
-#footer_container .top_row .row_wrapper .contact_panel .text >a{
-	color:#fff200;
+#footer_container .top_row .row_wrapper .text >a{
+	color:#ccffff;
+}
+#footer_container .top_row .row_wrapper .links_panel .items_wrapper{
+	text-align:right;
+	float:right;
+}
+#footer_container .top_row .row_wrapper .links_panel .item{
+	float:right;
+}
+#footer_container .top_row .row_wrapper .contact_panel .items_wrapper{
+	width:100%;
+	height:100%;	
+	padding-top:2.5%;
+}
+#footer_container .top_row .row_wrapper .contact_panel .icon{
+	display:inline-block;
+	height:80%;
 }
