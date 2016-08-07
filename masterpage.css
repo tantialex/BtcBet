@@ -16,7 +16,9 @@ a{
 	text-decoration:none;
 }
 #master_page{
-	width:100%;
+    min-width:1000px;
+    width:100%;
+    max-width:3000px;
 }
 .xCenter{
 	left:0px; 
@@ -63,7 +65,6 @@ a{
 	width:10%;
 	height:inherit;
 	position:relative;
-	height:100px;
 }
 #header_container .top_row .icon_wrapper .icon{
 	position:absolute;
@@ -184,9 +185,10 @@ a{
 #content_container .item{
 	position:relative;	
 	display:inline-block;
-	height:700px;
+	height:1000px;
     margin-top:2%;
     margin-bottom:2%;
+    border:2px dashed black;
 }
 #content_container .content_wrapper{
 	width:70%;
@@ -194,7 +196,7 @@ a{
 }
 #content_container .content_wrapper .content_iframe{
     width:100%;
-    height:100%;
+    height:1000px;
 }
 #content_container .side_content_wrapper{
 	width:20%;
