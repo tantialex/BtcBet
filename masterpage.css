@@ -186,22 +186,20 @@ a{
 	position:relative;	
 	display:inline-block;
 	height:700px;
-	margin-top:30px;
-	margin-bottom:30px;
-	border:2px dashed black;
+    margin-top:2%;
+    margin-bottom:2%;
 }
 #content_container .content_wrapper{
-	width:60%;
-	margin-left:5%;
-	margin-right:5%;
-	margin-top:2%;
-	margin-bottom:2%;
+	width:70%;
+	margin-left:3%;
+}
+#content_container .content_wrapper .content_iframe{
+    width:100%;
+    height:100%;
 }
 #content_container .side_content_wrapper{
 	width:20%;
-	margin-right:5%;
-	margin-top:2%;
-	margin-bottom:2%;
+	margin-right:3%;
 }
 
 #footer_container  a{
