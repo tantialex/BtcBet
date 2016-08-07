@@ -17,8 +17,7 @@ a{
 }
 #master_page{
 	width:100%;
-	min-width:1500px;
-	max-width:3000px;
+	min-width:960px;
 }
 .xCenter{
 	left:0px; 
@@ -80,7 +79,7 @@ a{
 	position:relative;
 	padding-top:20px;
 	height:80px;
-	width:30%;
+	width:60%;
 	letter-spacing:2px;
 }
 #header_container .top_row .welcome_text .main_text{
@@ -115,12 +114,11 @@ a{
 	display:inline-block;
 	position:relative;
 	height:40px;
-	width:16.5%;
+	width:16.2%;
 	vertical-align: top;
 	border-left:3px solid #002533;
 	list-style-type: none;
 	overflow:hidden;
-	
 }
 #header_container .bottom_row .nav_list .list_item p{
 	-webkit-transition-duration: 0.4s;
@@ -178,7 +176,6 @@ a{
 #header_container .bottom_row .nav_list .list_item >div p{
 	margin:0;
 	margin-top:0.7em;
-	vertical-align: center;
 }
 #header_container .bottom_row .nav_list .list_item a{
 	/**color_textAccent*/
@@ -194,11 +191,17 @@ a{
 	border:2px dashed black;
 }
 #content_container .content_wrapper{
-	width:60%; 
-	margin-left:10%;
+	width:60%;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:2%;
+	margin-bottom:2%;
 }
-#content_container .advert_wrapper{
-	width:10%; 
+#content_container .side_content_wrapper{
+	width:20%;
+	margin-right:5%;
+	margin-top:2%;
+	margin-bottom:2%;
 }
 
 #footer_container  a{
@@ -249,6 +252,8 @@ a{
 #footer_container .top_row .row_wrapper .links_panel .items_wrapper{
 	text-align:right;
 	float:right;
+	width:120%;
+	padding-top:20px;
 }
 #footer_container .top_row .row_wrapper .links_panel .item{
 	float:right;
@@ -269,14 +274,22 @@ a{
 	height:43px;
 }
 #footer_container .top_row .row_wrapper .contact_panel .items_wrapper{
-	width:100%;
+	width:120%;
 	height:100%;	
 	padding-top:2.5%;
 }
-#footer_container .top_row .row_wrapper .contact_panel .icon{
-	display:inline-block;
-	max-width:10%;
-	max-height:80%;
+#footer_container .top_row .row_wrapper .contact_panel .icon_wrapper {
+	position:relative;
+	display: inline-block;
+	width:10%;
+	height:100%;
+}
+#footer_container .top_row .row_wrapper .contact_panel .icon {
+	position:absolute;
+	top:50%;
+	transform:translate(0%,-50%);
+	max-width:80%;
+	max-height:100%;
 }
 #footer_container .top_row .row_wrapper .contact_panel .text{
 	margin: 10px 10px;
