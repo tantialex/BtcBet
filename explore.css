@@ -6,7 +6,6 @@
 		Text-Secondary: #ccffff; (Light Blue)
 */
 body{
-    background-color:#f2f2f2;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing:1px;
     padding:0px;
@@ -19,13 +18,32 @@ body{
     margin-right:auto;
 }
 #explore_page{
-    width:100%;
+	display:block;
+    width:95%;
     max-width:1000px;
+	min-height:1000px;
     height:100%;
 }
+#explore_page button{
+	padding:0;
+	border:0;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;
+	background-color:#0099cc;
+	color:#ccffff;
+	border: 2px solid #002533;
+	-webkit-transition-duration:0.4s;
+}
+#explore_page button:hover{
+	background-color:white;
+	color:#002533;
+	border: 2px solid #0099cc;
+}
 #explore_page .search_container{
+	
     width:60%;
-    height:20%;
+    height:22%;
     background-color:white;
     padding-left:30px;
     padding-right:30px;
@@ -33,7 +51,6 @@ body{
 }
 #explore_page .search_container .title_container{
     margin-top:20px;
-    margin-bottom:20px;
 }
 #explore_page .search_container .title_container .title{
     font-size:30px;
@@ -46,8 +63,15 @@ body{
     position:relative;
     width:100%;
 }
+#explore_page .search_container .top_row >div{
+    width:40%;
+}
+#explore_page .search_container .top_row p{
+    color:#002533;
+	font-weight:bold;
+}
 #explore_page .search_container .top_row select{
-    width:45%;
+    width:100%;
     text-align-last:center;
     height:25px;
     background-color:#0099cc;
@@ -55,7 +79,7 @@ body{
     border:2px solid #002533;
 }
 #explore_page .search_container .bottom_row{
-    margin-top:20px;
+    margin-top:30px;
     position:relative;
     width:100%;
     height:40px;
@@ -63,7 +87,129 @@ body{
 #explore_page .search_container .bottom_row .search_button{
     width:100%;
     height:100%;
-    background-color:#0099cc;
-    color:#ccffff;
-    border:2px solid #002533;
+}
+#explore_page .list_container{
+	margin-top:5%;
+	width:100%;
+	height:65%;
+}
+#explore_page .list_wrapper{
+	width:100%;
+	height:100%;
+}
+.card_container{
+	position:relative;
+	margin-top:30px;
+	width:100%;
+	height:140px;
+	border: 2px solid black;
+	background-color:white;
+}
+.card_container .card_header{
+	position:relative;
+	display:block;
+	width: 100%;
+	height:25%;
+	background-color:#0099cc;
+	border-bottom:2px solid black;
+}
+.card_container .card_header >p{
+	font-size:20px;
+	margin:0;
+	padding:0;
+	padding:7px 2%;
+	color:#ccffff;
+}
+.card_container .card_header .card_id{
+	position:absolute;
+	right:10px;
+	top:0;
+}
+.card_container .card_content {
+	width:100%;
+	height:75%;
+	padding-left:2%;
+}
+.card_container .card_content .item{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+	padding-right:2%;
+}
+.card_container .card_content .item >div{
+	position:absolute;
+	width:100%;
+	top:50%;
+	transform:translate(0%,-50%);
+}
+.card_container .card_content .item p{
+	font-size:14px;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.card_container .card_content .description_wrapper{
+	width:30%;
+	text-align:justify;
+}
+.card_container .card_content .total_amount_wrapper{
+	width:15%;
+}
+.card_container .card_content .total_bar_wrapper{
+	width:30%;
+}
+.card_container .card_content .button_wrapper{
+	width:16%;
+	padding-right:0%;
+}
+.card_container .card_content .total_bar_wrapper .total_bar{
+	position:relative;
+	width:100%;
+	height:40px;
+	padding:0;
+	border:3px solid black;
+	border-radius:25px;
+	overflow:hidden;
+}
+.card_container .card_content .total_bar_wrapper .total_bar .bar{
+	position:absolute;
+	height:100%;
+}
+.card_container .card_content .total_bar_wrapper .total_bar .no_bar{
+	text-align:right;
+	right:0;
+	width:50%;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #ff3300),
+		color-stop(1, #ffad99)
+	 );
+}
+.card_container .card_content .total_bar_wrapper .total_bar .yes_bar{
+	text-align:left;
+	left:0;
+	width:50%;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #1aff66),
+		color-stop(1, #99ffbb)
+	);
+}
+.card_container .card_content .total_bar_wrapper .total_bar .bar .text{
+	width:100%;
+	color:#262626;
+	display: inline-block;
+	vertical-align: middle;
+	text-align:center;
+	line-height: 40px;
+}
+.card_container .card_content .button_wrapper .view_button{
+    display: block;
+	width:60%;
+	height:40px;
 }

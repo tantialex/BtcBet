@@ -6,7 +6,7 @@
 		Text-Secondary: #ccffff; (Light Blue)		
 */
 body{
-	background-color:#f2f2f2;
+	background-color:#004b66;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing:1px;
 	padding:0px;
@@ -188,18 +188,17 @@ a{
 	height:1000px;
     margin-top:2%;
     margin-bottom:2%;
-    border:2px dashed black;
 }
 #content_container .content_wrapper{
-	width:70%;
-	margin-left:3%;
+	width:55%;
 }
 #content_container .content_wrapper .content_iframe{
     width:100%;
     height:1000px;
 }
 #content_container .side_content_wrapper{
-	width:20%;
+	width:15%;
+	margin-left:3%;
 	margin-right:3%;
 }
 

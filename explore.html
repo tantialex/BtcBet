@@ -1,35 +1,173 @@
 <html>
     <head>
         <link rel="stylesheet" href="explore.css" type="text/css">
-    </head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="total_bar.js"></script>
+   </head>
     <body>
-        <div id="explore_page">
-            <div class="search_container">
+        <div id="explore_page" class="xCenter">
+            <div class="search_container xCenter">
                 <div class="title_container">
                     <p class="title">Explore Bets</p>
                 </div>
-                <div class="top_row xCenter">
-                    <select name="status" id="statusSelect" style="float:left">
-                        <option value="open">Open</option>
-                        <option value="resolved">Resolved</option>
-                        <option value="closed">Closed</option>
-                        <option value="paid">Paid</option>
-                        <option value="all">All</option>
-                    </select>
-                    <select name="category" id="categorySelect" style="float:right">
-                        <option value="currency">Currency</option>
-                        <option value="politics">Politics</option>
-                        <option value="sports">Sports</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="misc">Miscellaneous</option>
-                        <option value="all">All</option>
-                    </select>
+                <div class="top_row">
+					<div style="float:left">
+						<p class="text">Status:</p>
+						<select name="status" id="statusSelect">
+							<option value="open">Open</option>
+							<option value="resolved">Resolved</option>
+							<option value="closed">Closed</option>
+							<option value="paid">Paid</option>
+							<option value="all">All</option>
+						</select>
+					</div>
+					<div style="float:right">
+						<p class="text">Category:</p>
+						<select name="category" id="categorySelect">
+							<option value="currency">Currency</option>
+							<option value="politics">Politics</option>
+							<option value="sports">Sports</option>
+							<option value="entertainment">Entertainment</option>
+							<option value="misc">Miscellaneous</option>
+							<option value="all">All</option>
+						</select>
+					</div>
                     <br style="clear:both">
                 </div>
                 <div class="bottom_row">
                     <button type="button" class="search_button">Search</button>
                 </div>
             </div>
+			<div class="list_container">
+				<div class="list_wrapper">
+					<div class="card_container">
+						<div class="card_wrapper">
+							<div class="card_header">
+								<p class="card_title">Bitcoin to top 1000 USD before January 2017</p>
+								<p class="card_id">#12</p>
+							</div>						
+							<div class="card_content">
+								<div class="description_wrapper item">
+									<div>
+										<p class="field_description">The price of one Bitcoin in USD will rise over $1000 before January 1st, 2017 as per Bitstamp.</p>
+									</div>
+								</div
+								><div class="total_amount_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total amount</p>
+										<p class="field_total_bets_amount">23.53427223</p>
+									</div>
+								</div	
+								><div class="total_bar_wrapper item">
+									<div>
+										<div class="total_bar item xCenter">
+											<div class="no_bar bar" data-percent=65>
+												<span class="field_no_value text">
+													%
+												</span>
+											</div>
+											<div class="yes_bar bar" data-percent=35>
+												<span class="field_yes_value text">
+													%
+												</span>
+											</div>
+										</div>		
+									</div>
+								</div
+								><div class="button_wrapper item">
+									<div>
+										<button type="button" class="view_button xCenter">View</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card_container">
+						<div class="card_wrapper">
+							<div class="card_header">
+								<p class="card_title">Magnus Carlsen Wins 2016 World Chess Championship</p>
+								<p class="card_id">#16</p>
+							</div>						
+							<div class="card_content">
+								<div class="description_wrapper item">
+									<div>
+										<p class="field_description">In November 2016, Magnus Carlsen will fight Sergey Karjakin for the World Chess Champion title.</p>
+									</div>
+								</div
+								><div class="total_amount_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total amount</p>
+										<p class="field_total_bets_amount">0.20202311</p>
+									</div>
+								</div	
+								><div class="total_bar_wrapper item">
+									<div>
+										<div class="total_bar item xCenter">
+											<div class="no_bar bar" data-percent=50>
+												<span class="field_no_value text">
+													%
+												</span>
+											</div>
+											<div class="yes_bar bar" data-percent=50>
+												<span class="field_yes_value text">
+													%
+												</span>
+											</div>
+										</div>		
+									</div>
+								</div
+								><div class="button_wrapper item">
+									<div>
+										<button type="button" class="view_button xCenter">View</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card_container">
+						<div class="card_wrapper">
+							<div class="card_header">
+								<p class="card_title">Presidential Election</p>
+								<p class="card_id">#20</p>
+							</div>						
+							<div class="card_content">
+								<div class="description_wrapper item">
+									<div>
+										<p class="field_description">Donald Trump will win the 2016 United States Presidential Election</p>
+									</div>
+								</div
+								><div class="total_amount_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total amount</p>
+										<p class="field_total_bets_amount">2.12455308</p>
+									</div>
+								</div	
+								><div class="total_bar_wrapper item">
+									<div>
+										<div class="total_bar item xCenter">
+											<div class="no_bar bar" data-percent=20>
+												<span class="field_no_value text">
+													%
+												</span>
+											</div>
+											<div class="yes_bar bar" data-percent=80>
+												<span class="field_yes_value text">
+													%
+												</span>
+											</div>
+										</div>		
+									</div>
+								</div
+								><div class="button_wrapper item">
+									<div>
+										<button type="button" class="view_button xCenter">View</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
     </body>
 </html>
