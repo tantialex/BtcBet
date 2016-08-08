@@ -5,6 +5,7 @@
     <title>MasterPage</title>
 	<link rel="stylesheet" href="masterpage.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="resize_iframe.js"></script>
 </head>
 <body>
 	<div id="master_page" class="xCenter">
@@ -65,7 +66,7 @@
 				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>
 			</div>
 			<div class="content_wrapper item">
-				<iframe class="content_iframe" src="explore.html" frameborder="0"></iframe>
+				<iframe id="iFrame" class="content_iframe" sandbox="allow-scripts allow-same-origin" src="explore.html" frameborder="0" ></iframe>
 			</div>
 			<div class="side_content_wrapper item" style="float:right;">
 				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>

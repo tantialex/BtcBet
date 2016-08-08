@@ -21,4 +21,5 @@ $(window).load(function setBars(){
 		$(yes_text).html(yes_percent+"%");
 		$(no_text).html(no_percent+"%");
 	});
+	parent.setIFrameHeight();
 });
