@@ -18,6 +18,7 @@ a{
 	text-decoration:none;
 }
 #master_page{
+	position:relative;
     width:100%;
 	min-width:950px;
     max-width:3000px;
@@ -180,23 +181,22 @@ a{
 	color:#ccffff;
 }
 
-#content_container .item{
-	position:relative;	
-	display:inline-block;
-	height:1000px;
-    margin-top:2%;
-    margin-bottom:2%;
-}
 #content_container .content_wrapper{
 	width:55%;
+	position:relative;	
+	display:block;
+	margin-top:60px;
+	height:1000px;
 }
 #content_container .content_wrapper .content_iframe{
     width:100%;
     height:1000px;
-	
 }
 #content_container .side_content_wrapper{
+	position:absolute;
+	top:0;
 	width:15%;
+	height:1000px;
 	margin-left:3%;
 	margin-right:3%;
 }
