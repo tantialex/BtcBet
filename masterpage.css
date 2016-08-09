@@ -1,23 +1,25 @@
 /**
-	Colors: 
-		Primary: #002533; (Dark Blue)
-		Secondary: #0099cc; (Light Blue)
-		Text-Primary: #80ddff; (Dark Blue)
-		Text-Secondary: #ccffff; (Light Blue)		
+	Colors:
+		Body Background: #006494 (SEA BLUE)
+		Dark-Primary: #13293D; (YANKEES BLUE)
+		Secondary: #1B98E0; (BATTERY CHARGED BLUE)
+		Text-Primary: #ccffff; (LIGHT BLUE)
+		https://coolors.co/13293d-006494-247ba0-1b98e0-e8f1f2
 */
 body{
-	background-color:#004b66;
+	background-color:#006494;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing:1px;
 	padding:0px;
 	margin:0px;
 }
+input, button, submit { border:none; } 
 a{
 	text-decoration:none;
 }
 #master_page{
-    min-width:1000px;
     width:100%;
+	min-width:950px;
     max-width:3000px;
 }
 .xCenter{
@@ -35,10 +37,10 @@ a{
 }
 .masterpage_container .top_row{
 	/**color-border*/
-	border-top:3px solid #002533;	
+	border-top:3px solid #13293D;	
 }
 .masterpage_container .bottom_row{
-	border-bottom:3px solid #002533;
+	border-bottom:3px solid #13293D;
 }	
 .masterpage_container .row .row_wrapper{
 	width:80%;
@@ -55,7 +57,7 @@ a{
 }
 #header_container .top_row{
 	height:100px;
-	background-color:#002533;
+	background-color:#13293D;
 }
 #header_container .top_row .icon_wrapper{
 	width:10%;
@@ -82,7 +84,7 @@ a{
 	font-size:24px;
 	padding:0;
 	margin:0;
-	color:#80ddff;
+	color:#1B98E0;
 }
 #header_container .top_row .welcome_text .sub_text{
 	font-size:16px;
@@ -93,7 +95,7 @@ a{
 }
 #header_container .bottom_row{
 	height:40px;
-	background-color: #0099cc;
+	background-color: #1B98E0;
 }
 #header_container .bottom_row .row_wrapper{
 	height:inherit;
@@ -112,7 +114,7 @@ a{
 	height:40px;
 	width:16.2%;
 	vertical-align: top;
-	border-left:3px solid #002533;
+	border-left:3px solid #13293D;
 	list-style-type: none;
 	overflow:hidden;
 }
@@ -148,7 +150,7 @@ a{
 	z-index:20;
 }
 #header_container .bottom_row .nav_list .nav_random{
-	background: linear-gradient(0deg,  #0099cc, #002533,  #0099cc);
+	background: linear-gradient(0deg,  #1B98E0, #13293D,  #1B98E0);
 	background-size: 600% 600%;
 	-webkit-animation: AnimationName 7s ease infinite;
 	-moz-animation: AnimationName 7s ease infinite;
@@ -190,7 +192,7 @@ a{
 }
 #content_container .content_wrapper .content_iframe{
     width:100%;
-    height:100px;
+    height:1000px;
 	
 }
 #content_container .side_content_wrapper{
@@ -209,19 +211,19 @@ a{
 }
 #footer_container .top_row{
 	height:150px;
-	background-color: #0099cc;
+	background-color: #1B98E0;
 }
 #footer_container .bottom_row{
 	height:50px;
-	background-color:#002533;
+	background-color:#13293D;
 }
 #footer_container .top_row .row_wrapper .list_item{
 	z-index:2;
 	position:relative;
 	width:33%;
 	height:100%;
-	border-left:3px dotted #002533;
-	border-bottom:3px dotted #002533;
+	border-left:3px dotted #13293D;
+	border-bottom:3px dotted #13293D;
 	vertical-align:top;
 }
 #footer_container .top_row .row_wrapper .items_wrapper{
@@ -238,7 +240,7 @@ a{
 }
 #footer_container .top_row .row_wrapper .text{
 	font-size:14px;
-	color:#002533;
+	color:#13293D;
 	font-weight:bold;
 	margin:0;
 	vertical-align:top;
@@ -293,4 +295,22 @@ a{
 	padding-top:9px;
 	font-size:12px;
 	color: #ccffff;
+}
+
+@media screen and (max-width : 1500px) {
+    p{
+		font-size:10px !important;
+    }
+	.text{
+		padding-top:5px !important;
+		font-size:12px !important;
+	}
+	.welcome_text p{
+		font-size:16px !important;
+	}
+	.welcome_text{	
+		padding-top:30px !important;
+		padding-left:40px !important;
+		height:auto !important;
+	}
 }

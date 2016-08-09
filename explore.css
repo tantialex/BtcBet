@@ -1,9 +1,10 @@
 /**
 	Colors:
-		Primary: #002533; (Dark Blue)
-		Secondary: #0099cc; (Light Blue)
-		Text-Primary: #80ddff; (Dark Blue)
-		Text-Secondary: #ccffff; (Light Blue)
+		Body Background: #006494 (SEA BLUE)
+		Dark-Primary: #13293D; (YANKEES BLUE)
+		Secondary: #1B98E0; (BATTERY CHARGED BLUE)
+		Text-Primary: #ccffff; (LIGHT BLUE)
+		https://coolors.co/13293d-006494-247ba0-1b98e0-e8f1f2
 */
 body{
     font-family: 'Roboto Condensed', sans-serif;
@@ -11,6 +12,7 @@ body{
     padding:0px;
     margin:0px;
 }
+input, button, submit { border:none; outline:none;} 
 .xCenter{
     left:0px;
     right:0px;
@@ -30,24 +32,25 @@ body{
 	font-size:14px;
 	font-weight:bold;
 	cursor:pointer;
-	background-color:#0099cc;
+	background-color:#1B98E0;
 	color:#ccffff;
-	border: 2px solid #002533;
+	border: 2px solid #13293D;
 	-webkit-transition-duration:0.4s;
 }
 #explore_page button:hover{
 	background-color:white;
-	color:#002533;
-	border: 2px solid #0099cc;
+	color:#1B98E0;
+	border: 2px solid #1B98E0;
 }
 #explore_page .search_container{
-	
     width:60%;
     height:22%;
     background-color:white;
     padding-left:30px;
     padding-right:30px;
-    border:2px solid #002533;
+    border:2px solid #13293D;
+	border-radius:8px;
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 #explore_page .search_container .title_container{
     margin-top:20px;
@@ -56,8 +59,9 @@ body{
     font-size:30px;
     margin:0;
     padding:0;
-    color:#002533;
+    color:#13293D;
     font-weight:bold;
+	text-align:center;
 }
 #explore_page .search_container .top_row {
     position:relative;
@@ -67,16 +71,16 @@ body{
     width:40%;
 }
 #explore_page .search_container .top_row p{
-    color:#002533;
+    color:#13293D;
 	font-weight:bold;
 }
 #explore_page .search_container .top_row select{
     width:100%;
     text-align-last:center;
     height:25px;
-    background-color:#0099cc;
+    background-color:#1B98E0;
     color:#ccffff;
-    border:2px solid #002533;
+    border:2px solid #13293D;
 }
 #explore_page .search_container .bottom_row{
     margin-top:30px;
@@ -87,6 +91,8 @@ body{
 #explore_page .search_container .bottom_row .search_button{
     width:100%;
     height:100%;
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
 }
 #explore_page .list_container{
 	margin-top:5%;
@@ -103,14 +109,17 @@ body{
 	width:100%;
 	height:140px;
 	border: 2px solid black;
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 	background-color:white;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
 }
 .card_container .card_header{
 	position:relative;
 	display:block;
 	width: 100%;
 	height:25%;
-	background-color:#0099cc;
+	background-color:#1B98E0;
 	border-bottom:2px solid black;
 }
 .card_container .card_header >p{
@@ -212,4 +221,33 @@ body{
     display: block;
 	width:60%;
 	height:40px;
+	border-bottom-right-radius:4px;
+}
+.card_container .card_content .time_wrapper{
+    position:absolute;
+	bottom:0px;
+	right:0px;
+	margin-right:4.5%;
+	margin-bottom:5px;
+}
+.card_container .card_content .time_wrapper h3{
+	font-size:10px;
+	font-weight:bold;
+    margin:0px;
+	padding:0px; 
+	color:grey;
+}
+
+@media screen and (max-width:600px){
+    p{
+		font-size:10px !important;
+	}
+	.time_wrapper .field_end_time{
+		font-size:6px !important;
+		margin-bottom:5px !important;
+    }
+	.card_title, .card_id{
+		padding-top:12px !important;
+		font-size:12px !important;
+	}
 }
