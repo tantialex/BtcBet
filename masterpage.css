@@ -1,24 +1,27 @@
 /**
-	Colors: 
-		Primary: #002533; (Dark Blue)
-		Secondary: #0099cc; (Light Blue)
-		Text-Primary: #80ddff; (Dark Blue)
-		Text-Secondary: #ccffff; (Light Blue)		
+	Colors:
+		Body Background: #006494 (SEA BLUE)
+		Dark-Primary: #13293D; (YANKEES BLUE)
+		Secondary: #1B98E0; (BATTERY CHARGED BLUE)
+		Text-Primary: #ccffff; (LIGHT BLUE)
+		https://coolors.co/13293d-006494-247ba0-1b98e0-e8f1f2
 */
 body{
-	background-color:#f2f2f2;
+	background-color:#006494;
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing:1px;
 	padding:0px;
 	margin:0px;
 }
+input, button, submit { border:none; } 
 a{
 	text-decoration:none;
 }
 #master_page{
-	width:100%;
-	min-width:1500px;
-	max-width:3000px;
+	position:relative;
+    width:100%;
+	min-width:950px;
+    max-width:3000px;
 }
 .xCenter{
 	left:0px; 
@@ -35,10 +38,10 @@ a{
 }
 .masterpage_container .top_row{
 	/**color-border*/
-	border-top:3px solid #002533;	
+	border-top:3px solid #13293D;	
 }
 .masterpage_container .bottom_row{
-	border-bottom:3px solid #002533;
+	border-bottom:3px solid #13293D;
 }	
 .masterpage_container .row .row_wrapper{
 	width:80%;
@@ -55,39 +58,34 @@ a{
 }
 #header_container .top_row{
 	height:100px;
-	background-color:#002533;
-}
-#header_container .top_row  .row_wrapper >div{
-	padding-left:2%;
-	padding-right:2%;
+	background-color:#13293D;
 }
 #header_container .top_row .icon_wrapper{
 	width:10%;
 	height:inherit;
 	position:relative;
-	height:100px;
+	margin-left:4%;
 }
 #header_container .top_row .icon_wrapper .icon{
 	position:absolute;
 	left:50%;
 	top:50%;
 	transform:translate(-50%,-50%);
-	width:50%;
-	max-width:60%;
-	max-height:100px;
+	max-height:70%;
 }
 #header_container .top_row .welcome_text{
 	position:relative;
 	padding-top:20px;
+	padding-left:2%;
 	height:80px;
-	width:30%;
+	width:60%;
 	letter-spacing:2px;
 }
 #header_container .top_row .welcome_text .main_text{
 	font-size:24px;
 	padding:0;
 	margin:0;
-	color:#80ddff;
+	color:#1B98E0;
 }
 #header_container .top_row .welcome_text .sub_text{
 	font-size:16px;
@@ -98,7 +96,8 @@ a{
 }
 #header_container .bottom_row{
 	height:40px;
-	background-color: #0099cc;
+	background-color: #1B98E0;
+	box-shadow:0px 4px 2px rgba(0,0,0,0.2);
 }
 #header_container .bottom_row .row_wrapper{
 	height:inherit;
@@ -110,17 +109,17 @@ a{
 #header_container .bottom_row .nav_list{
 	margin:0px;
 	padding:0px;
+	box-shadow:-2px 0px 2px rgba(0,0,0,0.2);
 }
 #header_container .bottom_row .nav_list .list_item{
 	display:inline-block;
 	position:relative;
 	height:40px;
-	width:16.5%;
+	width:16.2%;
 	vertical-align: top;
-	border-left:3px solid #002533;
+	border-left:3px solid #13293D;
 	list-style-type: none;
 	overflow:hidden;
-	
 }
 #header_container .bottom_row .nav_list .list_item p{
 	-webkit-transition-duration: 0.4s;
@@ -154,7 +153,7 @@ a{
 	z-index:20;
 }
 #header_container .bottom_row .nav_list .nav_random{
-	background: linear-gradient(0deg,  #0099cc, #002533,  #0099cc);
+	background: linear-gradient(0deg,  #1B98E0, #13293D,  #1B98E0);
 	background-size: 600% 600%;
 	-webkit-animation: AnimationName 7s ease infinite;
 	-moz-animation: AnimationName 7s ease infinite;
@@ -178,27 +177,30 @@ a{
 #header_container .bottom_row .nav_list .list_item >div p{
 	margin:0;
 	margin-top:0.7em;
-	vertical-align: center;
 }
 #header_container .bottom_row .nav_list .list_item a{
 	/**color_textAccent*/
 	color:#ccffff;
 }
 
-#content_container .item{
-	position:relative;	
-	display:inline-block;
-	height:700px;
-	margin-top:30px;
-	margin-bottom:30px;
-	border:2px dashed black;
-}
 #content_container .content_wrapper{
-	width:60%; 
-	margin-left:10%;
+	width:55%;
+	position:relative;	
+	display:block;
+	margin-top:60px;
+	height:1000px;
 }
-#content_container .advert_wrapper{
-	width:10%; 
+#content_container .content_wrapper .content_iframe{
+    width:100%;
+    height:1000px;
+}
+#content_container .side_content_wrapper{
+	position:absolute;
+	top:0;
+	width:15%;
+	height:1000px;
+	margin-left:3%;
+	margin-right:3%;
 }
 
 #footer_container  a{
@@ -210,20 +212,21 @@ a{
 	color:#80ddff;
 }
 #footer_container .top_row{
+	box-shadow:0px -4px 2px rgba(0,0,0,0.2);
 	height:150px;
-	background-color: #0099cc;
+	background-color: #1B98E0;
 }
 #footer_container .bottom_row{
 	height:50px;
-	background-color:#002533;
+	background-color:#13293D;
 }
 #footer_container .top_row .row_wrapper .list_item{
 	z-index:2;
 	position:relative;
 	width:33%;
 	height:100%;
-	border-left:3px dotted #002533;
-	border-bottom:3px dotted #002533;
+	border-left:3px dotted #13293D;
+	border-bottom:3px dotted #13293D;
 	vertical-align:top;
 }
 #footer_container .top_row .row_wrapper .items_wrapper{
@@ -233,14 +236,14 @@ a{
 }
 #footer_container .top_row .row_wrapper .item{
 	position:relative;
-	width:70%;
+	width:100%;
 	height:43px;
 	display:block;
 	padding:0px 20px;
 }
 #footer_container .top_row .row_wrapper .text{
 	font-size:14px;
-	color:#002533;
+	color:#13293D;
 	font-weight:bold;
 	margin:0;
 	vertical-align:top;
@@ -249,6 +252,8 @@ a{
 #footer_container .top_row .row_wrapper .links_panel .items_wrapper{
 	text-align:right;
 	float:right;
+	width:120%;
+	padding-top:20px;
 }
 #footer_container .top_row .row_wrapper .links_panel .item{
 	float:right;
@@ -269,13 +274,22 @@ a{
 	height:43px;
 }
 #footer_container .top_row .row_wrapper .contact_panel .items_wrapper{
-	width:100%;
+	width:120%;
 	height:100%;	
 	padding-top:2.5%;
 }
-#footer_container .top_row .row_wrapper .contact_panel .icon{
-	display:inline-block;
-	max-width:10%;
+#footer_container .top_row .row_wrapper .contact_panel .icon_wrapper {
+	position:relative;
+	display: inline-block;
+	width:10%;
+	height:100%;
+}
+#footer_container .top_row .row_wrapper .contact_panel .icon {
+	position:absolute;
+	top:50%;
+	right:10%;
+	transform:translate(0%,-50%);
+	max-width:60%;
 	max-height:80%;
 }
 #footer_container .top_row .row_wrapper .contact_panel .text{
@@ -285,4 +299,22 @@ a{
 	padding-top:9px;
 	font-size:12px;
 	color: #ccffff;
+}
+
+@media screen and (max-width : 1500px) {
+    p{
+		font-size:10px !important;
+    }
+	.text{
+		padding-top:5px !important;
+		font-size:12px !important;
+	}
+	.welcome_text p{
+		font-size:16px !important;
+	}
+	.welcome_text{	
+		padding-top:30px !important;
+		padding-left:40px !important;
+		height:auto !important;
+	}
 }

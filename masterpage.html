@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MasterPage</title>
+    <title>python_pageTitle</title>
 	<link rel="stylesheet" href="masterpage.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="resize_iframe.js"></script>
 </head>
 <body>
 	<div id="master_page" class="xCenter">
@@ -16,7 +17,7 @@
 					</div>
 					<div class="welcome_text" style="float:left;">
 						<p class="main_text">Welcome to BTCBet</p>
-						<p class="sub_text">The online Bitcoin betting website</p>
+						<p class="sub_text">The Online Bitcoin Betting Website</p>
 					</div>
 					<br style="clear:both">
 				</div>
@@ -37,12 +38,7 @@
 							</li
 							><li class="nav_new list_item">
 								<div>
-									<a href=""><p class="text">New Bet</p></a>
-								</div>
-							</li
-							><li class="nav_random list_item">
-								<div>
-									<a href=""><p class="text">Random Bet</p></a>
+									<a href=""><p class="text">Request a New Bet</p></a>
 								</div>
 							</li
 							><li class="nav_faq list_item">
@@ -52,7 +48,12 @@
 							</li
 							><li class="nav_stats list_item">
 								<div>
-									<a href=""><p class="text">Statistics</p></a>
+									<a href="" onclick="setIFrameHeight()"><p class="text">Statistics</p></a>
+								</div>
+							</li
+							><li class="nav_random list_item">
+								<div>
+									<a href=""><p class="text">View Random Bet</p></a>
 								</div>
 							</li>
 						</ul>
@@ -61,14 +62,14 @@
 			</div>
 		</div>
 		<div id="content_container">
-			<div class="advert_wrapper item" style="float:left;">
-				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Advert</p>
+			<div class="side_content_wrapper" style="left:0;">
+				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>
 			</div>
-			<div class="content_wrapper item">
-				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Content Here</p>
+			<div class="content_wrapper xCenter">
+				<iframe id="iFrame" class="content_iframe" sandbox="allow-scripts allow-same-origin" src="view_bet.html" frameborder="0" ></iframe>
 			</div>
-			<div class="advert_wrapper item" style="float:right;">
-				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Advert</p>
+			<div class="side_content_wrapper" style="right:0;">
+				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>
 			</div>
 			<br style="clear:both">
 		</div>
@@ -80,16 +81,16 @@
 							<div class="item">
 								<p class="text"><a>Frequently Asked Questions (FAQ)</a></p>
 							</div>
-							<div class="item">
+							<div class="item" style="visibility:hidden">
 								<p class="text"><a>The BTCBet Subreddit</a></p>
 							</div>
 							<div class="item">
-								<p class="text"><a href="https://bitcointalk.org" target="_blank">BitCoinTalk Forum</a></p>
+								<p class="text"><a href="https://bitcointalk.org" target="_blank">BitcoinTalk Forum</a></p>
 							</div>
 						</div>
 					</div
-					><div class="statistics_panel list_item">
-						<div class="panel_wrapper xCenter">
+					><div class="statistics_panel list_item" >
+						<div class="panel_wrapper xCenter" style="visibility:hidden">
 							<div class="left_panel panel" style="left:0;">
 								<div class="items_wrapper">
 									<div class="item">
@@ -121,16 +122,22 @@
 					><div class="contact_panel list_item">
 						<div class="items_wrapper">
 							<div class="contact_reddit item">
-								<img class="icon" src="imgs/icon_reddit.png">
+								<div class="icon_wrapper">
+									<img class="icon" src="imgs/icon_reddit.png">
+								</div>
 								<p class="text">Reddit: <a href="https://www.reddit.com/user/btcbet_us" target="_blank">/u/btcbet_us</a></p>
 							</div>
 							<div class="contact_email item">
-								<img class="icon" src="imgs/icon_email.png">
-								<p class="text">Email: <a>admin@btcbet.us</a></p>
+								<div class="icon_wrapper">
+									<img class="icon" src="imgs/icon_email.png">
+								</div>
+								<p class="text">Email: <a>contact@btcbet.us</a></p>
 							</div>
 							<div class="contact_bitcointalk item">
-								<img class="icon" src="imgs/icon_bitcointalk.png">
-								<p class="text">BitCoinTalk: <a href="https://bitcointalk.org/index.php?topic=991966" target="_blank">Talk to us!</a></p>
+								<div class="icon_wrapper">
+									<img class="icon" src="imgs/icon_bitcointalk.png">
+								</div>
+								<p class="text">BitcoinTalk: <a href="https://bitcointalk.org/index.php?topic=991966" target="_blank">Talk to us!</a></p>
 							</div>
 						</div>
 					</div>
