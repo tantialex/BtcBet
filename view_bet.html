@@ -87,16 +87,21 @@
 			</div>
 			<div class="submit_container container" data-choice=null>
 				<div class="submit_wrapper">
-					<div class="title_wrapper">
-						<p class="title">Place a '<span class="choice_text"></span>' Bet</p>
-						<p class="info xCenter">Before placing a bet, ensure you have read the <a target="_blank" href="/faq">FAQ section</a>. Specifically, make sure you understand <a target="_blank" href="/faq#norefunds">the circumstances in which you will not be refunded.</a></p>
-					</div>
-					<div class="captcha_box xCenter"></div>					
-					<input class="xCenter" style="width:200px" type="text" name="captcha" value="" placeholder="Captcha" required="">
-					<input name="addr" class="xCenter" style="margin-top:10px;" value="" placeholder="Bitcoin Address" required="" pattern="^1([1-9a-km-zA-HJ-Z]{24,33})$">
-					<div class="button_wrapper">
-						<button type="button" class="submit_button xCenter">Place Bet</button>
-					</div>
+					<form method="post">
+						<input type="hidden" name="random" id="randomForCaptcha" value="python_randomForCaptcha" />
+						<input type="hidden" name="betID" id="betID" value="python_betID" />
+						<input type="hidden" name="stance" id="stanceInput" value="NA" />
+						<div class="title_wrapper">
+							<p class="title">Place a '<span class="choice_text"></span>' Bet</p>
+							<p class="info xCenter">Before placing a bet, ensure you have read the <a target="_blank" href="/faq">FAQ section</a>. Specifically, make sure you understand <a target="_blank" href="/faq#norefunds">the circumstances in which you will not be refunded.</a></p>
+						</div>
+						<div class="captcha_box xCenter"></div>					
+						<input class="xCenter" style="width:200px" type="text" name="captcha" value="" placeholder="Captcha" required="">
+						<input name="addr" class="xCenter" style="margin-top:10px;" value="" placeholder="Bitcoin Address" required="" pattern="^1([1-9a-km-zA-HJ-Z]{24,33})$">
+						<div class="button_wrapper">
+							<input type="submit" name="submit" class="submit_button xCenter">Place Bet</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="button_wrapper">

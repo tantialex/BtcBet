@@ -48,4 +48,5 @@ function setCurrentChoice(foo){
 	currentChoice = foo;
 	$(submit_container).attr("data-choice",foo);
 	$("#view_page .submit_container .title .choice_text").html(""+foo);
+	document.getElementById("stanceInput").value = currentChoice.toUpperCase();
 }
