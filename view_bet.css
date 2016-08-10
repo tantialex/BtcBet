@@ -22,7 +22,7 @@ a{
     margin-left:auto;
     margin-right:auto;
 }
-table{ 
+table{
 	position:relative;
 	empty-cells: show;
 	width:100%;
@@ -38,7 +38,7 @@ tr{
 }
 th{
 	text-align:left;
-	
+
 }
 td{
 	height:50px;
@@ -109,7 +109,7 @@ button:hover{
 	width:20%;
 }
 #view_page .view_container .view_wrapper .triple .divider_cell{
-	width:10%;	
+	width:10%;
 }
 #view_page .view_container .view_wrapper .triple td, .headers th{
 	text-align:center;
@@ -148,7 +148,7 @@ button:hover{
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
-		left top,  
+		left top,
 		color-stop(0, #1aff66),
 		color-stop(1, #99ffbb)
 	);
@@ -178,18 +178,18 @@ button:hover{
 	color:#bfbfbf;
 }
 #view_page .submit_container .captcha_box{
-	width:200px; 
-	height:70px; 
-	background-color:white; 
+	width:200px;
+	height:70px;
+	background-color:white;
 	border:2px dashed black;
-	margin-top:40px; 
+	margin-top:40px;
 	margin-bottom:15px;
 }
 #view_page .submit_container input{
-	width:60%; 
-	height:3%; 
+	width:60%;
+	height:3%;
 	padding-left:1%;
-	min-height:30px; 
+	min-height:30px;
 	display:block;
 }
 #view_page .submit_container .button_wrapper{
@@ -213,7 +213,7 @@ button:hover{
 	margin-top:60px;
 }
 #view_page .button_wrapper .yes_button{
-	width:50%;
+	width:45%;
 	height:50px;
 	display:inline-block;
 	outline:0;
