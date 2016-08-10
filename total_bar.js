@@ -1,7 +1,7 @@
 var bars = null;
 
 $(window).load(function setBars(){
-	bars = $("#explore_page .card_container .total_bar");
+	bars = $(".total_bar");
 	console.log("in");
 	console.log(bars);
 	$(bars).each(function(){
