@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="faq.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="faq_page" class="xCenter">
+      <div class="faq_container" class="xCenter">
+        <div class="faq_wrapper">
+          <div class="title_wrapper">
+            <p class="title xCenter">Frequently Asked Questions</p>
+          </div>
+          <div class="subbox">
+              <span class="header">Introduction</span>
+              <ol>
+                  <li><b>What is BTCBet?</b></li>
+                      <ul>
+                          <li>BTCBet is an online betting website that uses bitcoin. With it, you can easily bet on events regarding bitcoin, politics, sports, and many more.</li>
+                      </ul>
+                  <br/><li><b>Why does this website look like it was made in the 70's?</b></li>
+                      <ul>
+                          <li>The creators of BTCBet strongly believe in minimalism and ensuring a quality product, without distracting from the primary purpose of the website. We wanted to keep things as simple and clutter-free as possible. Rest assured, the technology used in the rest of the website is not as outdated as its theme.</li>
+                      </ul>
+                  <br/><li><b>You're practically brand new (created in August of 2016). Why should anyone trust you?</b></li>
+                      <ul>
+                          <li>Just because we're new doesn't mean we won't strive to provide the best experience possible. With our minimum bet of python_minimumDeposit BTC, why not give us a try. Once we begin to prove ourselves in the community, we hope to see more people betting!</li>
+                      </ul>
+                  <br/><li><b>There are lots of alternatives though. What makes BTCBet so much better?</b></li>
+                      <ul>
+                          <li>While alternatives exist, there are not many sources betting sites that provide the vast range of categories we allow betting in, without adding confusion and complication that comes with dice games and other means of gambling.  We also offer a highly competitive fee of just python_feePercent percent.</li>
+                      <ul>
+              </ol>
+          </div>
+          <div class="subbox">
+              <span class="header">Betting Details</span>
+              <ol>
+                  <li><b>How do I place a bet?</b></li>
+                      <ol>
+                          <li>Click explore at the top to go to the explore page.</li>
+                          <li>Search for a category to bet on that interests you.</li>
+                          <li>Select a specific bet that you would like to take part in.</li>
+                          <li>Enter your bitcoin address to receive the winnings, the captcha, and decide whether you're going to bet "yes" or "no" on the given bet. Note that the address the payout will be sent to can never be changed, so make absolute sure of the address you submit! This is primarily as a security feature to protect against scammers trying to change people's addresses.</li>
+                          <li>Deposit your bitcoins, from python_minimumDeposit BTC to 100 BTC, to the address provided.</li>
+                          <li>Wait and see what the result of the bet is!  You will automatically receive a payout if you win the bet.</li>
+                      </ol>
+                  <br/><li><b>How do payouts work? Is there a fee?</b></li>
+                      <ul>
+                          <li>Right when the deposit is made, a python_feePercent percent fee is taken off the deposit.</li>
+                          <li>When the bet has finished and a decision has been reached, the administrators will automatically trigger a payout. All the deposits, minus the fees, will be split among the winning betters based on how much each person deposited.</li>
+                      </ul>
+                  <br/><li><b>How fast are payments processed?</b></li>
+                      <ul>
+                          <li>Payments are recorded as soon as one confirmation in the blockchain occurs.</b></li>
+                      </ul>
+                  <br/><li id="norefunds"><b>What if I make a bet after betting has closed? What if my transaction was sent before betting closes, but confirms after?</b></li>
+                      <ul>
+                          <li>BTCBet must receive the funds prior to betting closing. If funds are not received with one confirmation before betting closes, <b>they will not be counted toward the bet, and will be kept as a donation to BTCBet.</b></li>
+                          <li>This is a standard policy among similar betting websites, as it ensures that no fraudulent bets are placed after a bet has been resolved and everyone knows the outcome. It will not be refunded, so ensure that all bets are sent with an adequate transaction fee, and refrain from betting in the hour before the bet closes unless you are certain it will be confirmed with the transaction fee supplied.</li>
+                      </ul>
+                  <br/><li><b>What do the statuses of "closed" and "resolved" mean?</b></li>
+                      <ul>
+                          <li>All bets have an ending date and time. After this date and time, no more bets will be accepted.</li>
+                          <li>Sometimes there is a period between when betting closes, and when the resolution of the bet happens. An example is that betting may close before the olympics begin, but a resolution about medalists isn't reached until after the olympics is finished.</li>
+                          <li>Following the resolution (when the status has been turned to "resolved" and a decision is displayed on the bet page), there is a 24 to 72 hour discussion period.  During this period, people may contact us if they disagree with our posted outcome. Afer the 24-72 hour waiting period, payouts will be made and no further complaints will be accepted.</li>
+                          <li>Not all bets close before they are resolved. If a bet is labelled resolved, but it has not yet reached its end date/time, this means that betting has closed early due to the result of the bet being determined early.</li>
+                      </ul>
+                  <br/><li><b>What if I'm extremely unlucky and place a bet right as the bet is satisfied, but not as it comes to a close?</b></li>
+                      <ul>
+                          <li>Your bet will be automatically returned when payouts are processed (minus our fee).</li>
+                          <li>If you are trying to cheat us and place a bet after a resolution has already been reached, you may receive a refund. This detail is provided on a per-bet basis, so check the bet's description. In certain cases, we may keep your funds, depending on when exactly the payment was received. Contact us for more information regarding this policy.</li>
+                      </ul>
+              </ol>
+          </div>
+          <div class="subbox">
+              <span  class="header">Technical and Other Details</span>
+              <ol>
+                  <li><b>What security measures are in place?</b></li>
+                      <ul>
+                          <li>We use a cold wallet system. A BIP32 master public key is stored on our web server where deposit addresses are generated. A payment processing partner monitors addresses for deposits, and notifies our servers when deposits are made. At the end of each bet, after the 24-72 hour discussion period, we sign the transaction using a Trezor to ensure maximum security of everyone's assets.</li>
+                      </ul>
+                  <br/><li><b>How can we verify all bets are paid out?</b></li>
+                      <ul>
+                          <li>We maintain open access logs and databases for everyone to view! Check them out at our <a href="/stats">stats page.</a></li>
+                      </ul>
+                  <br/><li><b>Can I suggest a bet?</b></li>
+                      <ul>
+                          <li>We do not currently have an automated system for adding bets. However, you may certainly contact us by any means listed on our website, and we will add the bet! We are always looking for creative and innovative ideas to bet on!</li>
+                          <li>See our <a href="/new">new bet</a> page for more information.</li>
+                      </ul>
+                  <br/><li><b>How can we contact you?</b></li>
+                      <ul>
+                          <li>See any of our contact options in the menu bar at the top of this page. You can contact us via Reddit, email, or the BitcoinTalk forum.</li>
+                      </ul>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

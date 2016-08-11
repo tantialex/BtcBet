@@ -5,12 +5,12 @@
     <title>python_pageTitle</title>
 	<link rel="stylesheet" href="masterpage.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="resize_iframe.js"></script>
+	<script src="iframe_control.js"></script>
 </head>
 <body>
 	<div id="master_page" class="xCenter">
 		<div id="header_container" class="masterpage_container">
-			<div class="top_row row">			
+			<div class="top_row row">
 				<div class="row_wrapper xCenter">
 					<div class="icon_wrapper" style="float:left;">
 						<img class="icon" src="imgs/logo_btcbet.png" alt="page_logo"/>
@@ -22,7 +22,7 @@
 					<br style="clear:both">
 				</div>
 			</div>
-			<div class="bottom_row row">	
+			<div class="bottom_row row">
 				<div class="row_wrapper xCenter">
 					<div class="nav_wrapper">
 						<ul class="nav_list">
@@ -33,27 +33,27 @@
 							</li
 							><li class="nav_explore list_item">
 								<div>
-									<a href=""><p class="text">Explore</p></a>
+									<a href='#' onclick="switchContent('explore.html')"><p class="text">Explore</p></a>
 								</div>
 							</li
 							><li class="nav_new list_item">
 								<div>
-									<a href=""><p class="text">Request a New Bet</p></a>
+									<a href="#"><p class="text">Request a New Bet</p></a>
 								</div>
 							</li
 							><li class="nav_faq list_item">
 								<div>
-									<a href=""><p class="text">FAQ</p></a>
+									<a href="#" onclick="switchContent('faq.html')"><p class="text">FAQ</p></a>
 								</div>
 							</li
 							><li class="nav_stats list_item">
 								<div>
-									<a href="" onclick="setIFrameHeight()"><p class="text">Statistics</p></a>
+									<a href="#" onclick="switchContent()"><p class="text">Statistics</p></a>
 								</div>
 							</li
 							><li class="nav_random list_item">
 								<div>
-									<a href=""><p class="text">View Random Bet</p></a>
+									<a href="#" onclick="switchContent('view_bet.html')"><p class="text">View Random Bet</p></a>
 								</div>
 							</li>
 						</ul>
@@ -62,11 +62,18 @@
 			</div>
 		</div>
 		<div id="content_container">
+      <div class="loader_wrapper">
+        <div class="loader">
+          <div class="text_wrapper">
+          <p class="text" style="color:white; font-weight:bold; text-align:center;">Loading</p>
+          </div>
+        </div>
+      </div>
 			<div class="side_content_wrapper" style="left:0;">
 				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>
 			</div>
 			<div class="content_wrapper xCenter">
-				<iframe id="iFrame" class="content_iframe" sandbox="allow-scripts allow-same-origin" src="view_bet.html" frameborder="0" ></iframe>
+				<iframe id="iFrame" class="content_iframe" scrolling="no" sandbox="allow-scripts allow-same-origin" src="faq.html" frameborder="0" ></iframe>
 			</div>
 			<div class="side_content_wrapper" style="right:0;">
 				<p style="font-size:50px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);">Side Content</p>
