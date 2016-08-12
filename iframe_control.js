@@ -14,8 +14,9 @@ function switchContent(path){
   setIFrameSrc(path);
   setTimeout(function(){
     setIFrameHeight();
-  },5500);
+  },500);
 }
+/**
 function startLoader(){
   loader = $("#content_container .loader_wrapper");
   $(loader).addClass("animate");
@@ -24,11 +25,11 @@ function stopLoader(){
   loader = $("#content_container .loader_wrapper");
   $(loader).removeClass("animate");
 }
+*/
 function setIFrameHeight(){
   iFrame = document.getElementById('iFrame');
   iFrameJQ = $("#iFrame");
   if(iFrame){
   	$(iFrameJQ).attr("style","height:"+(iFrame.contentWindow.document.body.scrollHeight + 10)+ "px");
-    console.log($(iFrameJQ.css("height")));
     }
 }
