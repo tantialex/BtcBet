@@ -24,7 +24,7 @@ input, button, submit { border:none; outline:none;}
    width:95%;
    max-width:1000px;
 }
-#explore_page button{
+button{
 	padding:0;
 	border:0;
 	font-size:14px;
@@ -35,7 +35,7 @@ input, button, submit { border:none; outline:none;}
 	border: 2px solid #13293D;
 	-webkit-transition-duration:0.4s;
 }
-#explore_page button:hover{
+button:hover{
 	background-color:white;
 	color:#1B98E0;
 	border: 2px solid #1B98E0;
@@ -48,7 +48,7 @@ input, button, submit { border:none; outline:none;}
     padding-right:30px;
     border:2px solid #13293D;
 	  border-radius:8px;
-	  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+	  box-shadow:8px 8px 4px rgba(0,0,0,0.2);
 }
 #explore_page .search_container .title_container{
     margin-top:20px;
@@ -92,25 +92,25 @@ input, button, submit { border:none; outline:none;}
 	border-bottom-left-radius:6px;
 	border-bottom-right-radius:6px;
 }
-#explore_page .list_container{
+ .list_container{
 	margin-top:5%;
 	width:100%;
 }
-#explore_page .list_wrapper{
+ .list_wrapper{
 	width:100%;
 }
-#explore_page .card_container{
+ .card_container{
 	position:relative;
 	margin-top:30px;
 	width:100%;
 	height:140px;
 	border: 2px solid black;
-	box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+	box-shadow:8px 8px 4px rgba(0,0,0,0.2);
 	background-color:white;
 	border-bottom-left-radius:4px;
 	border-bottom-right-radius:4px;
 }
-#explore_page .card_container .card_header{
+ .card_container .card_header{
 	position:relative;
 	display:block;
 	width: 100%;
@@ -118,57 +118,57 @@ input, button, submit { border:none; outline:none;}
 	background-color:#1B98E0;
 	border-bottom:2px solid black;
 }
-#explore_page .card_container .card_header >p{
+ .card_container .card_header >p{
 	font-size:20px;
 	margin:0;
 	padding:0;
 	padding:7px 2%;
 	color:#ccffff;
 }
-#explore_page .card_container .card_header .card_id{
+ .card_container .card_header .card_id{
 	position:absolute;
 	right:10px;
 	top:0;
 }
-#explore_page .card_container .card_content {
+ .card_container .card_content {
 	width:100%;
 	height:75%;
 	padding-left:2%;
 }
-#explore_page .card_container .card_content .item{
+ .card_container .card_content .item{
 	position:relative;
 	display:inline-block;
 	vertical-align:top;
 	height:100%;
 	padding-right:2%;
 }
-#explore_page .card_container .card_content .item >div{
+ .card_container .card_content .item >div{
 	position:absolute;
 	width:100%;
 	top:50%;
 	transform:translate(0%,-50%);
 }
-#explore_page .card_container .card_content .item p{
+ .card_container .card_content .item p{
 	font-size:14px;
 	margin:0;
 	padding:0;
 	text-align:center;
 }
-#explore_page .card_container .card_content .description_wrapper{
+ .card_container .card_content .description_wrapper{
 	width:30%;
 	text-align:justify;
 }
-#explore_page .card_container .card_content .total_amount_wrapper{
+ .card_container .card_content .total_amount_wrapper{
 	width:15%;
 }
-#explore_page .card_container .card_content .total_bar_wrapper{
+ .card_container .card_content .total_bar_wrapper{
 	width:30%;
 }
-#explore_page .card_container .card_content .button_wrapper{
+ .card_container .card_content .button_wrapper{
 	width:16%;
 	padding-right:0%;
 }
-#explore_page .card_container .card_content .total_bar_wrapper .total_bar{
+ .card_container .card_content .total_bar_wrapper .total_bar{
 	position:relative;
 	width:100%;
 	height:40px;
@@ -177,11 +177,11 @@ input, button, submit { border:none; outline:none;}
 	border-radius:25px;
 	overflow:hidden;
 }
-#explore_page .card_container .card_content .total_bar_wrapper .total_bar .bar{
+ .card_container .card_content .total_bar_wrapper .total_bar .bar{
 	position:absolute;
 	height:100%;
 }
-#explore_page .card_container .card_content .total_bar_wrapper .total_bar .no_bar{
+ .card_container .card_content .total_bar_wrapper .total_bar .no_bar{
 	text-align:right;
 	right:0;
 	width:50%;
@@ -193,7 +193,7 @@ input, button, submit { border:none; outline:none;}
 		color-stop(1, #ffad99)
 	 );
 }
-#explore_page .card_container .card_content .total_bar_wrapper .total_bar .yes_bar{
+ .card_container .card_content .total_bar_wrapper .total_bar .yes_bar{
 	text-align:left;
 	left:0;
 	width:50%;
@@ -205,7 +205,7 @@ input, button, submit { border:none; outline:none;}
 		color-stop(1, #99ffbb)
 	);
 }
-#explore_page .card_container .card_content .total_bar_wrapper .total_bar .bar .text{
+ .card_container .card_content .total_bar_wrapper .total_bar .bar .text{
 	width:100%;
 	color:#262626;
 	display: inline-block;
@@ -213,20 +213,19 @@ input, button, submit { border:none; outline:none;}
 	text-align:center;
 	line-height: 40px;
 }
-#explore_page .card_container .card_content .button_wrapper .view_button{
+ .card_container .card_content .button_wrapper .view_button{
     display: block;
 	width:60%;
 	height:40px;
-	border-bottom-right-radius:4px;
 }
-#explore_page .card_container .card_content .time_wrapper{
+ .card_container .card_content .time_wrapper{
     position:absolute;
 	bottom:0px;
 	right:0px;
 	margin-right:4.5%;
 	margin-bottom:5px;
 }
-#explore_page .card_container .card_content .time_wrapper h3{
+ .card_container .card_content .time_wrapper h3{
 	font-size:10px;
 	font-weight:bold;
     margin:0px;
