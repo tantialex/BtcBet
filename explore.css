@@ -154,15 +154,14 @@ button:hover{
 	padding:0;
 	text-align:center;
 }
- .card_container .card_content .description_wrapper{
-	width:30%;
-	text-align:justify;
+.card_container .card_content .total_bets_wrapper{
+ width:15%;
 }
  .card_container .card_content .total_amount_wrapper{
 	width:15%;
 }
  .card_container .card_content .total_bar_wrapper{
-	width:30%;
+	width:45%;
 }
  .card_container .card_content .button_wrapper{
 	width:16%;
@@ -213,26 +212,35 @@ button:hover{
 	text-align:center;
 	line-height: 40px;
 }
- .card_container .card_content .button_wrapper .view_button{
-    display: block;
+.card_container .card_content .button_wrapper .view_button{
+  display: block;
 	width:60%;
 	height:40px;
 }
- .card_container .card_content .time_wrapper{
-    position:absolute;
-	bottom:0px;
-	right:0px;
-	margin-right:4.5%;
-	margin-bottom:5px;
+.card_container .card_content .lower{
+  position:absolute;
+  bottom:0px;
+  margin-bottom:5px;
 }
- .card_container .card_content .time_wrapper h3{
+.card_container .card_content .lower h3{
 	font-size:10px;
 	font-weight:bold;
-    margin:0px;
+  margin:0px;
 	padding:0px;
 	color:grey;
 }
-
+.card_container .card_content .time_wrapper{
+	right:0px;
+	margin-right:4.5%;
+}
+.card_container .card_content .category_wrapper{
+	left:0px;
+	margin-left:4.5%;
+}
+.card_container .card_content .status_wrapper{
+	left:50%;
+  transform:translate(-50%,0%);
+}
 @media screen and (max-width:600px){
     p{
 		font-size:10px !important;

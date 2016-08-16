@@ -9,10 +9,25 @@
     <div id="home_page" class="xCenter">
       <div class="home_container" class="xCenter">
         <div class="home_wrapper">
+          <div class="intro_container">
+            <div class="title_wrapper">
+              <h2 class="title">Welcome</h2>
+            </div>
+            <div class="text_wrapper">
+              <p>
+                        BTCBet is an easy way to use your bitcoins to make bets on the bitcoin economy, bitcoin statistics, current events, sports, and other "yes/no"-type decisions and events in our world.
+                </p>
+                <ul>
+                        <li><p>Our competitive fees and minimalistic interface make us one of the best options in bitcoin betting.</p></li>
+                        <li><p>One of our primary goals is to ensure that everything we do is fully verifiable. You can view our <a href="/stats">logs and databases</a>, and ensure we are making legitimate payouts!</p></li>
+                </ul>
+            </div>
+          </div>
+          </div>
           <div class="list_container">
             <div class="header_wrapper border">
               <h2 class="title" style="float:left;">Top Bets</h2>
-              <button class="request_button" type="button" style="float:right;">Got an idea?<button>
+              <button class="request_button" type="button" style="float:right;" onclick="parent.switchContent('request_bet.html')">Got an idea?<button>
               <br style="clear:both;">
             </div>
     				<div class="list_wrapper xCenter">
@@ -22,13 +37,14 @@
     								<p class="card_title">python_betTitle</p>
     								<p class="card_id">#python_betID</p>
     							</div>
-    							<div class="card_content">
-    								<div class="description_wrapper item">
+                  <div class="card_content">
+                    <div class="total_amount_wrapper item">
     									<div>
-    										<p class="field_description">python_description</p>
+    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+    										<p class="field_total_amount">python_totalAmount BTC</p>
     									</div>
     								</div
-    								><div class="total_amount_wrapper item">
+    								><div class="total_bets_wrapper item">
     									<div>
     										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
     										<p class="field_total_bets">python_totalBets</p>
@@ -55,7 +71,13 @@
     										<button type="button" class="view_button xCenter">View</button>
     									</div>
     								</div>
-    								<div class="time_wrapper">
+                    <div class="category_wrapper lower">
+    									<h3 class="field_category">Category: python_category</h3>
+    								</div>
+                    <div class="status_wrapper lower">
+    									<h3 class="field_status">Status: python_status</h3>
+    								</div>
+                    <div class="time_wrapper lower">
     									<h3 class="field_end_time">End Date: python_endTime</h3>
     								</div>
     							</div>
@@ -67,13 +89,14 @@
     								<p class="card_title">python_betTitle</p>
     								<p class="card_id">#python_betID</p>
     							</div>
-    							<div class="card_content">
-    								<div class="description_wrapper item">
+                  <div class="card_content">
+                    <div class="total_amount_wrapper item">
     									<div>
-    										<p class="field_description">python_description</p>
+    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+    										<p class="field_total_amount">python_totalAmount BTC</p>
     									</div>
     								</div
-    								><div class="total_amount_wrapper item">
+    								><div class="total_bets_wrapper item">
     									<div>
     										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
     										<p class="field_total_bets">python_totalBets</p>
@@ -100,7 +123,13 @@
     										<button type="button" class="view_button xCenter">View</button>
     									</div>
     								</div>
-    								<div class="time_wrapper">
+                    <div class="category_wrapper lower">
+    									<h3 class="field_category">Category: python_category</h3>
+    								</div>
+                    <div class="status_wrapper lower">
+    									<h3 class="field_status">Status: python_status</h3>
+    								</div>
+                    <div class="time_wrapper lower">
     									<h3 class="field_end_time">End Date: python_endTime</h3>
     								</div>
     							</div>
