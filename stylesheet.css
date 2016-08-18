@@ -892,6 +892,7 @@ button:hover{
 #faq_page .faq_container .faq_wrapper{
   padding-top:20px;
   padding-bottom:20px;
+	width:95%;
 }
 #faq_page .faq_wrapper .title_wrapper{
   width:100%;
