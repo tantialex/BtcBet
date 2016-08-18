@@ -59,7 +59,7 @@ button:hover{
     padding:0;
     color:#13293D;
     font-weight:bold;
-	text-align:center;
+	  text-align:center;
 }
 #explore_page .search_container .top_row {
     position:relative;
@@ -70,7 +70,7 @@ button:hover{
 }
 #explore_page .search_container .top_row p{
     color:#13293D;
-	font-weight:bold;
+	  font-weight:bold;
 }
 #explore_page .search_container .top_row select{
     width:100%;
@@ -92,7 +92,7 @@ button:hover{
 	border-bottom-left-radius:6px;
 	border-bottom-right-radius:6px;
 }
-.list_container{
+#content_frame .list_container{
 	margin-top:5%;
 	width:100%;
   background-color:#1e4162;
