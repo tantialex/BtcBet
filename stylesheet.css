@@ -37,7 +37,7 @@ button:hover{
 #master_page{
 	position:relative;
     width:100%;
-	min-width:950px;
+		min-width:1150px;
     max-width:3000px;
 }
 .xCenter{
@@ -339,7 +339,7 @@ button:hover{
 		height:auto !important;
 	}
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:1200px){
   p{
 		font-size:10px !important;
 	 }
@@ -352,7 +352,7 @@ button:hover{
 		font-size:12px !important;
 	}
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1500px){
 	#view_page .view_container .title_wrapper .title{
 		font-size:15px !important;
 	}
@@ -360,7 +360,7 @@ button:hover{
 		font-size:10px !important;
 	}
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:1200px){
 	#view_page .view_container .title_wrapper .title{
 		font-size:13px !important;
 	}
@@ -368,7 +368,7 @@ button:hover{
 		font-size:8px !important;
 	}
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1500px){
 	#faq_page .header{
 		font-size:12px !important;
 	}
@@ -376,7 +376,7 @@ button:hover{
 		font-size:10px !important;
 	}
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:1200px){
 	#faq_page .header{
 		font-size:10px !important;
 	}
