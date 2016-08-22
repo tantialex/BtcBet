@@ -1,146 +1,137 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="stylesheet.css" type"text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="total_bar"></script>
-  </head>
-  <body>
-    <div id="home_page" class="xCenter">
-      <div class="home_container" class="xCenter">
-        <div class="home_wrapper">
-          <div class="intro_container">
-            <div class="title_wrapper">
-              <h2 class="title">Welcome</h2>
-            </div>
-            <div class="text_wrapper">
-              <p>
-                BTCBet is an easy way to use your bitcoins to make bets on the bitcoin economy, bitcoin statistics, current events, sports, and other "yes/no"-type decisions and events in our world.
-              </p>
-              <ul>
-                <li><p>Our competitive fees and minimalistic interface make us one of the best options in bitcoin betting.</p></li>
-                <li><p>One of our primary goals is to ensure that everything we do is fully verifiable. You can view our <a href="/stats">logs and databases</a>, and ensure we are making legitimate payouts!</p></li>
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="list_container">
-            <div class="header_wrapper border">
-              <h2 class="title" style="float:left;">Top Bets</h2>
-              <button class="request_button" type="button" style="float:right;" onclick="parent.switchContent('request_bet.html')">Got an idea?<button>
-              <br style="clear:both;">
-            </div>
-    				<div class="list_wrapper xCenter">
-    					<div class="card_container xCenter">
-    						<div class="card_wrapper">
-    							<div class="card_header">
-    								<p class="card_title">python_betTitle</p>
-    								<p class="card_id">#python_betID</p>
-    							</div>
-                  <div class="card_content">
-                    <div class="total_amount_wrapper item">
-    									<div>
-    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
-    										<p class="field_total_amount">python_totalAmount BTC</p>
-    									</div>
-    								</div
-    								><div class="total_bets_wrapper item">
-    									<div>
-    										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
-    										<p class="field_total_bets">python_totalBets</p>
-    									</div>
-    								</div
-    								><div class="total_bar_wrapper item">
-    									<div>
-    										<div class="total_bar item xCenter">
-    											<div class="no_bar bar" data-percent=python_noPercent>
-    												<span class="field_no_value text">
-    													python_totalNoAmount BTC
-    												</span>
-    											</div>
-    											<div class="yes_bar bar" data-percent=python_yesPercent>
-    												<span class="field_yes_value text">
-    													python_totalYesAmount BTC
-    												</span>
-    											</div>
-    										</div>
-    									</div>
-    								</div
-    								><div class="button_wrapper item">
-    									<div>
-    										<button type="button" class="view_button xCenter">View</button>
-    									</div>
-    								</div>
-                    <div class="category_wrapper lower">
-    									<h3 class="field_category">Category: python_category</h3>
-    								</div>
-                    <div class="status_wrapper lower">
-    									<h3 class="field_status">Status: python_status</h3>
-    								</div>
-                    <div class="time_wrapper lower">
-    									<h3 class="field_end_time">End Date: python_endTime</h3>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-              <div class="card_container xCenter">
-    						<div class="card_wrapper">
-    							<div class="card_header">
-    								<p class="card_title">python_betTitle</p>
-    								<p class="card_id">#python_betID</p>
-    							</div>
-                  <div class="card_content">
-                    <div class="total_amount_wrapper item">
-    									<div>
-    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
-    										<p class="field_total_amount">python_totalAmount BTC</p>
-    									</div>
-    								</div
-    								><div class="total_bets_wrapper item">
-    									<div>
-    										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
-    										<p class="field_total_bets">python_totalBets</p>
-    									</div>
-    								</div
-    								><div class="total_bar_wrapper item">
-    									<div>
-    										<div class="total_bar item xCenter">
-    											<div class="no_bar bar" data-percent=python_noPercent>
-    												<span class="field_no_value text">
-    													python_totalNoAmount BTC
-    												</span>
-    											</div>
-    											<div class="yes_bar bar" data-percent=python_yesPercent>
-    												<span class="field_yes_value text">
-    													python_totalYesAmount BTC
-    												</span>
-    											</div>
-    										</div>
-    									</div>
-    								</div
-    								><div class="button_wrapper item">
-    									<div>
-    										<button type="button" class="view_button xCenter">View</button>
-    									</div>
-    								</div>
-                    <div class="category_wrapper lower">
-    									<h3 class="field_category">Category: python_category</h3>
-    								</div>
-                    <div class="status_wrapper lower">
-    									<h3 class="field_status">Status: python_status</h3>
-    								</div>
-                    <div class="time_wrapper lower">
-    									<h3 class="field_end_time">End Date: python_endTime</h3>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-            <div class="footer_wrapper border">
-            </div>
-    			</div>
+<script src="total_bar"></script>
+<div id="home_page" class="xCenter">
+  <div class="home_container" class="xCenter">
+    <div class="home_wrapper">
+      <div class="intro_container">
+        <div class="title_wrapper">
+          <h2 class="title">Welcome</h2>
+        </div>
+        <div class="text_wrapper">
+          <p>
+            BTCBet is an easy way to use your bitcoins to make bets on the bitcoin economy, bitcoin statistics, current events, sports, and other "yes/no"-type decisions and events in our world.
+          </p>
+          <ul>
+            <li><p>Our competitive fees and minimalistic interface make us one of the best options in bitcoin betting.</p></li>
+            <li><p>One of our primary goals is to ensure that everything we do is fully verifiable. You can view our <a href="/stats">logs and databases</a>, and ensure we are making legitimate payouts!</p></li>
+          </ul>
         </div>
       </div>
+      </div>
+      <div class="list_container">
+        <div class="header_wrapper border">
+          <h2 class="title" style="float:left;">Top Bets</h2>
+          <button class="request_button" type="button" style="float:right;" onclick="parent.switchContent('request_bet.html')">Got an idea?<button>
+          <br style="clear:both;">
+        </div>
+				<div class="list_wrapper xCenter">
+					<div class="card_container xCenter">
+						<div class="card_wrapper">
+							<div class="card_header">
+								<p class="card_title">python_betTitle</p>
+								<p class="card_id">#python_betID</p>
+							</div>
+              <div class="card_content">
+                <div class="total_amount_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+										<p class="field_total_amount">python_totalAmount BTC</p>
+									</div>
+								</div
+								><div class="total_bets_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
+										<p class="field_total_bets">python_totalBets</p>
+									</div>
+								</div
+								><div class="total_bar_wrapper item">
+									<div>
+										<div class="total_bar item xCenter">
+											<div class="no_bar bar" data-percent=python_noPercent>
+												<span class="field_no_value text">
+													python_totalNoAmount BTC
+												</span>
+											</div>
+											<div class="yes_bar bar" data-percent=python_yesPercent>
+												<span class="field_yes_value text">
+													python_totalYesAmount BTC
+												</span>
+											</div>
+										</div>
+									</div>
+								</div
+								><div class="button_wrapper item">
+									<div>
+										<button type="button" class="view_button xCenter">View</button>
+									</div>
+								</div>
+                <div class="category_wrapper lower">
+									<h3 class="field_category">Category: python_category</h3>
+								</div>
+                <div class="status_wrapper lower">
+									<h3 class="field_status">Status: python_status</h3>
+								</div>
+                <div class="time_wrapper lower">
+									<h3 class="field_end_time">End Date: python_endTime</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+          <div class="card_container xCenter">
+						<div class="card_wrapper">
+							<div class="card_header">
+								<p class="card_title">python_betTitle</p>
+								<p class="card_id">#python_betID</p>
+							</div>
+              <div class="card_content">
+                <div class="total_amount_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+										<p class="field_total_amount">python_totalAmount BTC</p>
+									</div>
+								</div
+								><div class="total_bets_wrapper item">
+									<div>
+										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
+										<p class="field_total_bets">python_totalBets</p>
+									</div>
+								</div
+								><div class="total_bar_wrapper item">
+									<div>
+										<div class="total_bar item xCenter">
+											<div class="no_bar bar" data-percent=python_noPercent>
+												<span class="field_no_value text">
+													python_totalNoAmount BTC
+												</span>
+											</div>
+											<div class="yes_bar bar" data-percent=python_yesPercent>
+												<span class="field_yes_value text">
+													python_totalYesAmount BTC
+												</span>
+											</div>
+										</div>
+									</div>
+								</div
+								><div class="button_wrapper item">
+									<div>
+										<button type="button" class="view_button xCenter">View</button>
+									</div>
+								</div>
+                <div class="category_wrapper lower">
+									<h3 class="field_category">Category: python_category</h3>
+								</div>
+                <div class="status_wrapper lower">
+									<h3 class="field_status">Status: python_status</h3>
+								</div>
+                <div class="time_wrapper lower">
+									<h3 class="field_end_time">End Date: python_endTime</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="footer_wrapper border">
+        </div>
+			</div>
     </div>
   </div>
-  </body>
-</html>
+</div>
