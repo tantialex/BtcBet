@@ -509,18 +509,19 @@ button:hover {
 	right: 0;
 	width: 50%;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ff3300), color-stop(1, #ffad99));
-	background-image: -webkit-linear-gradient(left bottom, left top, color-stop(0, #ff3300), color-stop(1, #ffad99));
-	background-image: -moz-linear-gradient(left bottom, left top, color-stop(0, #ff3300), color-stop(1, #ffad99));
-	background-image: -o-linear-gradient(left bottom, left top, color-stop(0, #ff3300), color-stop(1, #ffad99));
+	background-image: -webkit-linear-gradient(bottom, #ff3300 0%, #ffad99 100%);
+	background-image: -moz-linear-gradient(bottom, #ff3300 0%, #ffad99 100%);
+	background-image: -moz-linear-gradient(bottom, #ff3300 0%, #ffad99 100%);
+	background-image: -o-linear-gradient(bottom, #ff3300 0%, #ffad99 100%);
 }
 #content_frame .card_container .card_content .total_bar_wrapper .total_bar .yes_bar {
 	text-align: left;
 	left: 0;
 	width: 50%;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1aff66), color-stop(1, #99ffbb));
-	background-image: -webkit-linear-gradient(linear, left bottom, left top, color-stop(0, #1aff66), color-stop(1, #99ffbb));
-	background-image: -moz-linear-gradient(linear, left bottom, left top, color-stop(0, #1aff66), color-stop(1, #99ffbb));
-	background-image: -o-linear-gradient(linear, left bottom, left top, color-stop(0, #1aff66), color-stop(1, #99ffbb));
+	background-image: -webkit-linear-gradient(bottom, #1aff66 0%, #99ffbb 100%);
+	background-image: -moz-linear-gradient(bottom, #1aff66 0%, #99ffbb 100%);
+	background-image: -o-linear-gradient(bottom, #1aff66 0%, #99ffbb 100%);
 }
 #content_frame .card_container .card_content .total_bar_wrapper .total_bar .bar .text {
 	width: 100%;
