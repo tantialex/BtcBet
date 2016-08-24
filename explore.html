@@ -1,4 +1,8 @@
-<script src="total_bar.js"></script>
+<head>
+  <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<div id="content_frame">
 <div id="explore_page" class="xCenter">
     <div class="search_container xCenter">
         <div class="title_container">
@@ -39,6 +43,9 @@
       <br style="clear:both;">
     </div>
 		<div class="list_wrapper xCenter">
+      <div class="no_results_wrapper">
+        <p class="text">There are currently no results to your search criteria.</p>
+      </div>
 			<div class="card_container xCenter">
 				<div class="card_wrapper">
 					<div class="card_header">
@@ -147,4 +154,7 @@
     <div class="footer_wrapper border">
     </div>
 	</div>
+</div>
+<script src="total_bar.js"></script>
+<script src="check_bets.js"></script>
 </div>
