@@ -667,7 +667,7 @@ button:hover {
 	width: 100%;
 	margin-top: 25px;
 	padding-top: 25px;
-	border-top: 1px solid #f2f2f2;
+	border-top: 3px inset rgba(0, 100, 148,0.2);
 }
 #view_page table:first-child {
 	margin-top: 0px;
@@ -732,7 +732,10 @@ button:hover {
 	width: 10%;
 }
 #view_page .view_container .view_wrapper .triple td, .headers th {
-	text-align: center;
+	text-align: center !important;
+}
+#view_page .view_container .description_text{
+	padding-bottom:25px;
 }
 #view_page .total_bar_wrapper .total_bar {
 	position: relative;
