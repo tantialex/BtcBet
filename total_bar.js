@@ -1,6 +1,10 @@
 var bars = null;
 
-$(window).load(function setBars(){
+$(".list_container").load(function(){
+	setBars();
+});
+
+function setBars(){
 	bars = $(".total_bar");
 	$(bars).each(function(){
 		var yes_bar = $(this).find(".yes_bar");
@@ -17,4 +21,4 @@ $(window).load(function setBars(){
 		$(yes_text).html(yes_percent+"%");
 		$(no_text).html(no_percent+"%");
 	});
-});
+}

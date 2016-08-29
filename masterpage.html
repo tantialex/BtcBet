@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>python_pageTitle</title>
-	<link rel="stylesheet" href="masterpage.css" type="text/css">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="iframe_control.js"></script>
+  <script src="total_bar"></script>
+  <script src="open_submit.js"></script>
 </head>
 <body>
 	<div id="master_page" class="xCenter">
@@ -62,17 +64,10 @@
 			</div>
 		</div>
 		<div id="content_container">
-      <div class="loader_wrapper">
-        <div class="loader">
-          <div class="text_wrapper">
-          <p class="text" style="color:white; font-weight:bold; text-align:center;">Loading</p>
-          </div>
-        </div>
-      </div>
 			<div class="side_content_wrapper" style="left:0;">
 			</div>
 			<div class="content_wrapper xCenter">
-				<iframe id="iFrame" class="content_iframe" scrolling="no" sandbox="allow-scripts allow-same-origin" src="faq.html" frameborder="0" ></iframe>
+				<div id="content_frame">python_content</div>
 			</div>
 			<div class="side_content_wrapper" style="right:0;">
 			</div>

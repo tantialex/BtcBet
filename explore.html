@@ -1,59 +1,65 @@
 <html>
     <head>
-      <link rel="stylesheet" href="explore.css" type="text/css">
+      <link rel="stylesheet" href="stylesheet.css" type="text/css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   		<script src="total_bar.js"></script>
    </head>
     <body>
+      <div id="content_frame">
         <div id="explore_page" class="xCenter">
             <div class="search_container xCenter">
                 <div class="title_container">
                     <h2 class="title">Explore Bets</h2>
                 </div>
                 <div class="top_row">
-					<div style="float:left">
-						<p class="text" style="text-align:left">Status</p>
-						<select name="status" id="statusSelect">
-							<option value="open">Open</option>
-							<option value="resolved">Resolved</option>
-							<option value="closed">Closed</option>
-							<option value="paid">Paid</option>
-							<option value="all">All</option>
-						</select>
-					</div>
-					<div style="float:right">
-						<p class="text" style="text-align:right">Category</p>
-						<select name="category" id="categorySelect">
-							<option value="currency">Currency</option>
-							<option value="politics">Politics</option>
-							<option value="sports">Sports</option>
-							<option value="entertainment">Entertainment</option>
-							<option value="misc">Miscellaneous</option>
-							<option value="all">All</option>
-
-						</select>
-					</div>
-                    <br style="clear:both">
+        					<div style="float:left">
+        						<p class="text" style="text-align:left">Status</p>
+        						<select name="status" id="statusSelect">
+        							<option value="open">Open</option>
+        							<option value="resolved">Resolved</option>
+        							<option value="closed">Closed</option>
+        							<option value="paid">Paid</option>
+        							<option value="all">All</option>
+        						</select>
+        					</div>
+        					<div style="float:right">
+        						<p class="text" style="text-align:right">Category</p>
+        						<select name="category" id="categorySelect">
+        							<option value="currency">Currency</option>
+        							<option value="politics">Politics</option>
+        							<option value="sports">Sports</option>
+        							<option value="entertainment">Entertainment</option>
+        							<option value="misc">Miscellaneous</option>
+        							<option value="all">All</option>
+        						</select>
+        					</div>
+                  <br style="clear:both">
                 </div>
                 <div class="bottom_row">
-                    <button type="button" class="search_button">Search</button>
-                </div>
+                  <button type="button" class="search_button">Search</button>
+               </div>
+          </div>
+          <div class="list_container">
+            <div class="header_wrapper border">
+              <h2 class="title" style="float:left;">Explore Bets</h2>
+              <button class="request_button" type="button" style="float:right;" onclick="parent.switchContent('request_bet.html')">Got an idea?<button>
+              <br style="clear:both;">
             </div>
-    			<div class="list_container">
-    				<div class="list_wrapper">
-    					<div class="card_container">
+    				<div class="list_wrapper xCenter">
+    					<div class="card_container xCenter">
     						<div class="card_wrapper">
     							<div class="card_header">
     								<p class="card_title">python_betTitle</p>
     								<p class="card_id">#python_betID</p>
     							</div>
-    							<div class="card_content">
-    								<div class="description_wrapper item">
+                  <div class="card_content">
+                    <div class="total_amount_wrapper item">
     									<div>
-    										<p class="field_description">python_description</p>
+    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+    										<p class="field_total_amount">python_totalAmount BTC</p>
     									</div>
     								</div
-    								><div class="total_amount_wrapper item">
+    								><div class="total_bets_wrapper item">
     									<div>
     										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
     										<p class="field_total_bets">python_totalBets</p>
@@ -80,14 +86,75 @@
     										<button type="button" class="view_button xCenter">View</button>
     									</div>
     								</div>
-    								<div class="time_wrapper">
+                    <div class="category_wrapper lower">
+    									<h3 class="field_category">Category: python_category</h3>
+    								</div>
+                    <div class="status_wrapper lower">
+    									<h3 class="field_status">Status: python_status</h3>
+    								</div>
+                    <div class="time_wrapper lower">
+    									<h3 class="field_end_time">End Date: python_endTime</h3>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+              <div class="card_container xCenter">
+    						<div class="card_wrapper">
+    							<div class="card_header">
+    								<p class="card_title">python_betTitle</p>
+    								<p class="card_id">#python_betID</p>
+    							</div>
+                  <div class="card_content">
+                    <div class="total_amount_wrapper item">
+    									<div>
+    										<p class="title" style="vertical-align:top; font-weight:bold;">Total Pool</p>
+    										<p class="field_total_amount">python_totalAmount BTC</p>
+    									</div>
+    								</div
+    								><div class="total_bets_wrapper item">
+    									<div>
+    										<p class="title" style="vertical-align:top; font-weight:bold;">Total bets</p>
+    										<p class="field_total_bets">python_totalBets</p>
+    									</div>
+    								</div
+    								><div class="total_bar_wrapper item">
+    									<div>
+    										<div class="total_bar item xCenter">
+    											<div class="no_bar bar" data-percent=python_noPercent>
+    												<span class="field_no_value text">
+    													python_totalNoAmount BTC
+    												</span>
+    											</div>
+    											<div class="yes_bar bar" data-percent=python_yesPercent>
+    												<span class="field_yes_value text">
+    													python_totalYesAmount BTC
+    												</span>
+    											</div>
+    										</div>
+    									</div>
+    								</div
+    								><div class="button_wrapper item">
+    									<div>
+    										<button type="button" class="view_button xCenter">View</button>
+    									</div>
+    								</div>
+                    <div class="category_wrapper lower">
+    									<h3 class="field_category">Category: python_category</h3>
+    								</div>
+                    <div class="status_wrapper lower">
+    									<h3 class="field_status">Status: python_status</h3>
+    								</div>
+                    <div class="time_wrapper lower">
     									<h3 class="field_end_time">End Date: python_endTime</h3>
     								</div>
     							</div>
     						</div>
     					</div>
     				</div>
+            <div class="footer_wrapper border">
+            </div>
     			</div>
         </div>
+      </div>
     </body>
 </html>
