@@ -1,160 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>python_pageTitle</title>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="iframe_control.js"></script>
-  <script src="total_bar"></script>
-  <script src="open_submit.js"></script>
-</head>
-<body>
-	<div id="master_page" class="xCenter">
-		<div id="header_container" class="masterpage_container">
-			<div class="top_row row">
-				<div class="row_wrapper xCenter">
-					<div class="icon_wrapper" style="float:left;">
-						<img class="icon" src="imgs/logo_btcbet.png" alt="page_logo"/>
-					</div>
-					<div class="welcome_text" style="float:left;">
-						<p class="main_text">Welcome to BTCBet</p>
-						<p class="sub_text">The Online Bitcoin Betting Website</p>
-					</div>
-					<br style="clear:both">
-				</div>
-			</div>
-			<div class="bottom_row row">
-				<div class="row_wrapper xCenter">
-					<div class="nav_wrapper">
-						<ul class="nav_list">
-							<li class="nav_home list_item xCenter">
-								<div class="xCenter">
-									<a href="#" onclick="switchContent('home.html')"><p class="text">Home</p></a>
-								</div>
-							</li
-							><li class="nav_explore list_item">
-								<div>
-									<a href='#' onclick="switchContent('explore.html')"><p class="text">Explore</p></a>
-								</div>
-							</li
-							><li class="nav_new list_item">
-								<div>
-									<a href="#"><p class="text">Request a New Bet</p></a>
-								</div>
-							</li
-							><li class="nav_faq list_item">
-								<div>
-									<a href="#" onclick="switchContent('faq.html')"><p class="text">FAQ</p></a>
-								</div>
-							</li
-							><li class="nav_stats list_item">
-								<div>
-									<a href="#" onclick="switchContent()"><p class="text">Statistics</p></a>
-								</div>
-							</li
-							><li class="nav_random list_item">
-								<div>
-									<a href="#" onclick="switchContent('view_bet.html')"><p class="text">View Random Bet</p></a>
-								</div>
-							</li>
-						</ul>
+	<head>
+		<meta charset="UTF-8">
+		<title>python_pageTitle</title>
+		<link rel="stylesheet" href="resources/stylesheet.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="/resources/open_submit.js"></script>
+		<script src="/resources/countdown.min.js"></script>
+	</head>
+	<body>
+		<div id="master_page" class="xCenter">
+			<div id="header_container" class="masterpage_container">
+				<div class="top_row row">
+					<div class="row_wrapper xCenter">
+						<div class="icon_wrapper" style="float:left;">
+							<img class="icon" src="/imgs/logo_btcbet.png" alt="BTCBet Online Betting Logo"/>
+						</div>
+						<div class="welcome_text" style="float:left;">
+							<p class="main_text">Welcome to BTCBet</p>
+							<p class="sub_text">The Online Bitcoin Betting Website</p>
+						</div>
+						<br style="clear:both">
 					</div>
 				</div>
-			</div>
-		</div>
-		<div id="content_container">
-			<div class="side_content_wrapper" style="left:0;">
-			</div>
-			<div class="content_wrapper xCenter">
-				<div id="content_frame">python_content</div>
-			</div>
-			<div class="side_content_wrapper" style="right:0;">
-			</div>
-			<br style="clear:both">
-		</div>
-		<div id="footer_container" class="masterpage_container">
-			<div class="top_row row">
-				<div class="row_wrapper xCenter">
-					<div class="links_panel list_item">
-						<div class="items_wrapper">
-							<div class="item">
-								<p class="text"><a>Frequently Asked Questions (FAQ)</a></p>
-							</div>
-							<div class="item" style="visibility:hidden">
-								<p class="text"><a>The BTCBet Subreddit</a></p>
-							</div>
-							<div class="item">
-								<p class="text"><a href="https://bitcointalk.org" target="_blank">BitcoinTalk Forum</a></p>
-							</div>
-						</div>
-					</div
-					><div class="statistics_panel list_item" >
-						<div class="panel_wrapper xCenter" style="visibility:hidden">
-							<div class="left_panel panel" style="left:0;">
-								<div class="items_wrapper">
-									<div class="item">
-										<p class="text">Total Bets: <a class="field_totalBets">100</a></p>
+				<div class="bottom_row row">
+					<div class="row_wrapper xCenter">
+						<div class="nav_wrapper">
+							<ul class="nav_list">
+								<li class="nav_home list_item xCenter">
+									<div class="xCenter">
+										<a href="/"><p class="text">Home</p></a>
 									</div>
-									<div class="item">
-										<p class="text">Bets Won Yes: <a class="field_totalBets_won_yes">62</a></p>
+								</li
+								><li class="nav_explore list_item">
+									<div>
+										<a href="/explore"><p class="text">Explore</p></a>
 									</div>
-									<div class="item">
-										<p class="text">Bets Won No: <a class="field_totalBets_won_no">38</a></p>
+									<div class="explore dropdown dropdown">
+										<ul>
+											<li><a href="#"><p class="text">Currency</p></a></li
+											><li><a href="#"><p class="text">Politics</p></a></li
+											><li><a href="#"><p class="text">Sports</p></a></li
+											><li><a href="#"><p class="text">Entertainment</p></a></li
+											><li><a href="#"><p class="text">Miscellaneous</p></a></li>
+										</ul>
 									</div>
-								</div>
-							</div>
-							<div class="right_panel panel" style="right:0;">
-								<div class="items_wrapper">
-									<div class="item">
-										<p class="text">Total Bets Placed: <a class="field_totalBets_placed">560</a></p>
+								</li
+								><li class="nav_new list_item">
+									<div>
+										<a href="/new"><p class="text">Request a New Bet</p></a>
 									</div>
-									<div class="item">
-										<p class="text">Bitcoins Won: <a class="field_totalBitcoins_won">54.1010</a></p>
+								</li
+								><li class="nav_faq list_item">
+									<div>
+										<a href="/faq"><p class="text">FAQ</p></a>
 									</div>
-									<div class="item">
-										<p class="text">Highest Won: <a class="field_totalBitcoins_highest">2.4219</a></p>
+								</li
+								><li class="nav_stats list_item">
+									<div>
+										<a href="/stats"><p class="text">Statistics</p></a>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div
-					><div class="contact_panel list_item">
-						<div class="items_wrapper">
-							<div class="contact_reddit item">
-								<div class="icon_wrapper">
-									<img class="icon" src="imgs/icon_reddit.png">
-								</div>
-								<p class="text">Reddit: <a href="https://www.reddit.com/user/btcbet_us" target="_blank">/u/btcbet_us</a></p>
-							</div>
-							<div class="contact_email item">
-								<div class="icon_wrapper">
-									<img class="icon" src="imgs/icon_email.png">
-								</div>
-								<p class="text">Email: <a>contact@btcbet.us</a></p>
-							</div>
-							<div class="contact_bitcointalk item">
-								<div class="icon_wrapper">
-									<img class="icon" src="imgs/icon_bitcointalk.png">
-								</div>
-								<p class="text">BitcoinTalk: <a href="https://bitcointalk.org/index.php?topic=991966" target="_blank">Talk to us!</a></p>
-							</div>
+								</li
+								><li class="nav_random list_item">
+									<div>
+										<a href="/view"><p class="text">View a Random Bet</p></a>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="bottom_row row">
-				<div class="row_wrapper xCenter">
-					<div class="left_panel panel" style="float:left; text-align:left;">
-						<p class="copyright">@2016-2020 btcbet.us copyright</p>
+			<div id="content_container">
+				<div class="side_content_wrapper" style="left:0;"></div>
+				<div class="content_wrapper xCenter">
+					<div id="content_frame">
+						<!-- Start Content -->
+						python_content
+						<!-- End Content -->
 					</div>
-					<div class="right_panel panel" style="float:right; text-align:right;">
-						<p class="server_time">2016-08-05 03:48:41</p>
+				</div>
+				<div class="side_content_wrapper" style="right:0;"></div>
+				<br style="clear:both">
+			</div>
+			<div id="footer_container" class="masterpage_container">
+				<div class="top_row row">
+					<div class="row_wrapper xCenter">
+						<div class="links_panel list_item">
+							<div class="items_wrapper">
+								<div class="item">
+									<p class="text"><a>Frequently Asked Questions (FAQ)</a></p>
+								</div>
+								<div class="item" style="visibility:hidden">
+									<p class="text"><a>The BTCBet Subreddit</a></p>
+								</div>
+								<div class="item">
+									<p class="text"><a href="https://bitcointalk.org" target="_blank">BitcoinTalk Forum</a></p>
+								</div>
+							</div>
+						</div
+						><div class="statistics_panel list_item" >
+							<div class="panel_wrapper xCenter" style="visibility:hidden">
+								<div class="left_panel panel" style="left:0;">
+									<div class="items_wrapper">
+										<div class="item">
+											<p class="text">Total Bets: <a class="field_totalBets">100</a></p>
+										</div>
+										<div class="item">
+											<p class="text">Bets Won Yes: <a class="field_totalBets_won_yes">62</a></p>
+										</div>
+										<div class="item">
+											<p class="text">Bets Won No: <a class="field_totalBets_won_no">38</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="right_panel panel" style="right:0;">
+									<div class="items_wrapper">
+										<div class="item">
+											<p class="text">Total Bets Placed: <a class="field_totalBets_placed">560</a></p>
+										</div>
+										<div class="item">
+											<p class="text">Bitcoins Won: <a class="field_totalBitcoins_won">54.1010</a></p>
+										</div>
+										<div class="item">
+											<p class="text">Highest Won: <a class="field_totalBitcoins_highest">2.4219</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div
+						><div class="contact_panel list_item">
+							<div class="items_wrapper">
+								<div class="contact_reddit item">
+									<div class="icon_wrapper">
+										<img class="icon" src="/imgs/icon_reddit.png">
+									</div>
+									<p class="text">Reddit: <a href="https://reddit.com/u/btcbet_us" target="_blank">/u/btcbet_us</a></p>
+								</div>
+								<div class="contact_email item">
+									<div class="icon_wrapper">
+										<img class="icon" src="/imgs/icon_email.png">
+									</div>
+									<p class="text">Email: <a href="mailto:contact@btcbet.us">contact@btcbet.us</a></p>
+								</div>
+								<div class="contact_bitcointalk item">
+									<div class="icon_wrapper">
+										<img class="icon" src="/imgs/icon_bitcointalk.png">
+									</div>
+									<p class="text">BitcoinTalk: <a href="https://bitcointalk.org/index.php?topic=991966" target="_blank">Talk to us!</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<br style="clear:both;">
+				</div>
+				<div class="bottom_row row">
+					<div class="row_wrapper xCenter">
+						<div class="left_panel panel" style="float:left; text-align:left;">
+							<p class="copyright">Copyright BTCBet.us 2016-2020</p>
+						</div>
+						<!--<div class="right_panel panel" style="float:right; text-align:right;">
+								<p class="server_time">2016-08-05 03:48:41</p>
+						</div>-->
+						<br style="clear:both;">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
+		<script src="/resources/total_bar.js"></script>
+	</body>
 </html>

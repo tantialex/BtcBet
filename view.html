@@ -1,0 +1,129 @@
+<div id="view_page" class="xCenter">
+	python_makeBetArea
+	<div class="view_container container">
+		<div class="view_wrapper">
+			<div class="title_wrapper">
+				<h2 class="title" style="float:left;"><a style="color:inherit;text-decoration:inherit;" href="/view?betID=python_betID">python_betTitle</a></h2>
+				<h2 class="title" style="float:right;font-size:16px;">#python_betID</h2>
+			</div>
+			<table>
+				<tr class="single">
+					<th>Description:</th>
+					<td class="description_text">python_description</td>
+				</tr>
+			</table>
+			<table style="margin-top:0;">
+				<tr class="double">
+					<th>Bet Status:</th>
+					<td>python_status</td>
+					<th>Category:</th>
+					<td>python_category</td>
+				</tr>
+			</table>
+			<table>
+				<tr class="headers triple">
+					<td></td>
+					<th>Yes</th>
+					<td class="divider_cell"></td>
+					<th>No</th>
+					<td class="divider_cell"></td>
+					<th>All</th>
+				</tr>
+				<tr class="triple">
+					<th>Bet Pool:</th>
+					<td>python_totalYesAmount BTC</td>
+					<td class="divider_cell"></td>
+					<td>python_totalNoAmount BTC</td>
+					<td class="divider_cell"></td>
+					<td>python_totalAmount BTC</td>
+				</tr>
+				<tr class="triple">
+					<th>Number of Bets:</th>
+					<td>python_totalYesBets Bets</td>
+					<td class="divider_cell"></td>
+					<td>python_totalNoBets Bets</td>
+					<td class="divider_cell"></td>
+					<td>python_totalBets Bets</td>
+				</tr>
+			</table>
+			<div class="total_bar_wrapper">
+				<div class="total_bar xCenter">
+					<div class="no_bar bar" data-percent="python_noPercent">
+						<span class="field_no_value text">
+							python_totalNoAmount BTC
+						</span>
+					</div>
+					<div class="yes_bar bar" data-percent="python_yesPercent">
+						<span class="field_yes_value text">
+							python_totalYesAmount BTC
+						</span>
+					</div>
+				</div>
+			</div>
+			<table>
+				<tr class="row_time double">
+					<th>Creation Date:</th>
+					<th>Closing Date:</th>
+					<th>Time Remaining:</th>
+				</tr>
+				<tr class="row_time double">
+					<td><span id="creationDateSpan"></span></td>
+					<td><span id="endDateSpan"></span></td>
+					<td><span id="countdownSpan"></span></td>
+				</tr>
+			</table>
+			<div class="button_wrapper" style="display:python_buttonDisplayStyle;">
+				<button type="button" class="yes_button choice_button" onclick="changeSubmit('Yes')" style="float:left;">Bet Yes</button
+				><button type="button" class="no_button choice_button" onclick="changeSubmit('No')" style="float:right;">Bet No</button>
+				<br style="clear:both;">
+			</div>
+		</div>
+	</div>
+	<div class="button_wrapper">
+		<button type="button" class="back_button xCenter" onclick="if (document.referrer.includes('explore')) history.go(-1); else window.location.href='/explore';">Back</button>
+	</div>
+</div>
+
+
+<script>
+	var startDate = new Date(0);
+	var endDate = new Date(0);
+	startDate.setUTCSeconds(Math.round(python_creationTime));
+	endDate.setUTCSeconds(Math.round(python_endTime));
+
+	var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+	window.setInterval(function(){
+		if ("python_status".toLowerCase() == "open") {
+			document.getElementById("countdownSpan").innerHTML = countdown(null, endDate, null, 3).toString().replace(" and ", ", ");
+		}
+		else {
+			document.getElementById("countdownSpan").innerHTML = "Ended";
+		}
+
+		document.getElementById("creationDateSpan").innerHTML = convertTimestamp(startDate);
+		document.getElementById("endDateSpan").innerHTML = convertTimestamp(endDate);
+
+	}, 1000);
+
+	function convertTimestamp(d) {
+	  var yyyy = d.getFullYear(),
+			hh = d.getHours(),
+			h = hh,
+			min = ('0' + d.getMinutes()).slice(-2),
+			sec = ('0' + d.getSeconds()).slice(-2),
+			ampm = 'AM';
+				
+		if (hh > 12) {
+			h = hh - 12;
+			ampm = 'PM';
+		} else if (hh === 12) {
+			h = 12;
+			ampm = 'PM';
+		} else if (hh == 0) {
+			h = 12;
+		}
+		return monthNames[d.getMonth()] + " " + d.getDate() + ", " + yyyy + ", " + h + ':' + min + ':' + sec + ' ' + ampm;
+	}
+	
+</script>

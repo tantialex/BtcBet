@@ -1,8 +1,9 @@
 var bars = null;
 
-$(".list_container").load(function(){
+//$(".list_container")
+window.onload = function(){
 	setBars();
-});
+};
 
 function setBars(){
 	bars = $(".total_bar");

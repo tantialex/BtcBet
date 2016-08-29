@@ -42,6 +42,7 @@ function openSubmit(foo){
 		opacity:1,
 	},700);
 	isOpened = true;
+	window.scrollTo(0,0);
 }
 
 function setCurrentChoice(foo){
